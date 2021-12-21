@@ -1,7 +1,12 @@
 import React from "react";
 import "./navbar.scss";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [menu, setMenu] = useState(false);
+
+  const showMenu = () => setMenu(!menu);
+  
   return (
     <div className="navbar">
       <div className="container">
