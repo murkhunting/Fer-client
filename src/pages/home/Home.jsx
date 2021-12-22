@@ -1,14 +1,25 @@
 import React from "react";
 import "./home.scss";
-import Navbar from "../../components/Navbar/Navbar";
+import Item from "../../components/Item/Item";
 
 const Home = () => {
   return (
     <div className="home">
-      <Navbar />
       <div className="name">
         <h1>FERNANDO MARÍ REBOLLO</h1>
         <h5>DRONE PILOT: VIDEO & PHOTOGRAPHY</h5>
+      </div>
+      <div className="container">
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        
       </div>
     </div>
   );

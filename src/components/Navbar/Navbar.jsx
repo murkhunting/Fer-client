@@ -20,8 +20,8 @@ const Navbar = () => {
       </div>
       <div className={menu ? "menu active" : "menu"}>
         <div className="menucontainer">
-          <span>VIDEO PROJECTS</span>
-          <span>PHOTO PROJECTS</span>
+          <span>VIDEOS</span>
+          <span>PHOTOS</span>
           <span>HOW I WOTK</span>
           <span>ABOUT</span>
           <span>CONTACT</span>

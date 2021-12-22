@@ -1,0 +1,40 @@
+.item {
+  width: 420px;
+  height: 550px;
+  margin: 5px 5px;
+  overflow: hidden;
+
+  .blackwhite {
+    object-fit: fill;
+  }
+
+  &:hover {
+    width: 430px;
+    overflow: hidden;
+
+    .blackwhite {
+      display: none;
+    }
+
+    .iteminfo {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 20px 30px;
+      z-index: 999;
+
+      h3 {
+        margin: 5px;
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+
+    .gif {
+      height: 550px;
+      object-fit: cover;
+      z-index: -99;
+    }
+  }
+}
