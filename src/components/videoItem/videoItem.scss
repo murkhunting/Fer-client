@@ -1,0 +1,33 @@
+.videoitem {
+  width: 97vw;
+  height: 98vh;
+  margin: 5px 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .videoname {
+    position: absolute;
+    margin-top: 40vh;
+    color: white;
+
+    span {
+      font-size: 60px;
+      font-weight: 600;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  .blackwhite {
+    width: 98vw;
+    object-fit: cover;
+  }
+}
