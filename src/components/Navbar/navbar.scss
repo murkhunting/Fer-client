@@ -23,7 +23,7 @@
     height: 100vh;
     position: fixed;
     z-index: 200;
-    background-color: rgba(103, 131, 145, 0.9);
+    background-color: rgba(132, 136, 138, 0.9);
     transform: translateY(-150%);
     transition: all 0.3s ease-out;
   }
@@ -32,17 +32,17 @@
     transform: translateY(-50px);
 
     .menucontainer {
-      margin-top: 120px;
+      margin-top: 140px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       font-size: 60px;
       color: lightgrey;
-      font-weight: 400;
+      font-weight: 600;
 
       span {
-        padding: 5px 0;
+        padding: 10px 0;
       }
 
       span:hover {
@@ -54,8 +54,8 @@
         font-size: 40px;
       }
 
-      .closeicon:hover{
-          color:white;
+      .closeicon:hover {
+        color: white;
       }
     }
   }

@@ -23,7 +23,6 @@ const Navbar = () => {
           <span>VIDEOS</span>
           <span>PHOTOS</span>
           <span>HOW I WOTK</span>
-          <span>ABOUT</span>
           <span>CONTACT</span>
           <div>
             <IoClose className="closeicon" onClick={showMenu} />

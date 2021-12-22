@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/home/Home.jsx";
-import About from "./pages/about/About.jsx";
 import Contact from "./pages/contact/Contact.jsx";
 import How from "./pages/how/How.jsx";
 import Photo from "./pages/photo/Photo.jsx";
@@ -19,7 +18,6 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/how" element={<How />} />
           <Route path="/photos" element={<PhotoList />} />
