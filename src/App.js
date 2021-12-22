@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState } from "react";
 
 import Home from "./pages/home/Home.jsx";
 import About from "./pages/about/About.jsx";
@@ -12,17 +11,11 @@ import Video from "./pages/video/Video.jsx";
 import VideoList from "./pages/videoList/VideoList.jsx";
 
 import Navbar from "./components/Navbar/Navbar.jsx";
-import Menu from "./components/menu/Menu.jsx";
-// import Backdrop from "./components/menu/Backdrop.jsx";
 
 function App() {
-  // const [menuToggle, setMenuToggle] = useState(false);
-
   return (
     <Router>
       <Navbar />
-      {/* <Menu show={menuToggle} close={() => setMenuToggle(false)} /> */}
-      {/* <Backdrop show={menuToggle} /> */}
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
