@@ -13,6 +13,15 @@
     align-items: center;
     justify-content: space-between;
 
+    .right {
+      display: flex;
+      align-items: center;
+      img {
+        width: 43px;
+        margin-right: 10px;
+      }
+    }
+
     .left {
       cursor: pointer;
     }

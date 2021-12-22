@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./navbar.scss";
 import { IoClose } from "react-icons/io5";
+import logo from "../../assets/images/logofer.png";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -12,6 +13,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="container">
         <div className="right">
+          <img src={logo} alt="" />
           <span>HOME</span>
         </div>
         <div className="left">
