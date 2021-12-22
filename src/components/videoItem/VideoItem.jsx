@@ -14,7 +14,7 @@ const VideoItem = () => {
         <span>FORMENTERA</span>
         {isHovered && (
           <>
-            <h3>- View Details -</h3>
+            <h3>- View Project -</h3>
           </>
         )}
       </div>
