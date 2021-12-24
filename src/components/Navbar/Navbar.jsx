@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="container">
         <div className="right">
           <img src={logo} alt="" />
-          <span>HOME</span>
+          {/* <span>HOME</span> */}
         </div>
         <div className="left">
           <div onClick={showMenu}>MENU</div>
@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="menucontainer">
           <span>VIDEOS</span>
           <span>PHOTOS</span>
-          <span>HOW I WOTK</span>
+          <span>HOW I WORK</span>
           <span>CONTACT</span>
           <div>
             <IoClose className="closeicon" onClick={showMenu} />
