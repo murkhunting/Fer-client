@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./navbar.scss";
 import { IoClose } from "react-icons/io5";
 import logo from "../../assets/images/logofer.png";
@@ -12,11 +13,14 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="container">
-        <div className="right">
+        {/* <div className="left">
+          <h1>FERNANDO MARÍ REBOLLO</h1>
+          <h5>- DRONE PILOT: VIDEO & PHOTOGRAPHY -</h5>
+        </div> */}
+        <div className="center">
           <img src={logo} alt="" />
-          {/* <span>HOME</span> */}
         </div>
-        <div className="left">
+        <div className="right">
           <div onClick={showMenu}>MENU</div>
         </div>
       </div>

@@ -7,10 +7,10 @@ import dronelogo from "../../assets/images/dronelogo.png";
 const Contact = () => {
   return (
     <div className="contact">
-      <div className="name">
+      {/* <div className="name">
         <h1>FERNANDO MARÍ REBOLLO</h1>
         <h5>DRONE PILOT: VIDEO & PHOTOGRAPHY</h5>
-      </div>
+      </div> */}
       <div className="container">
         <div className="left">
           <span>DO YOU HAVE A PROJECT IN MIND?</span>
@@ -29,6 +29,7 @@ const Contact = () => {
                 src="https://quizizz.com/media/resource/gs/quizizz-media/quizzes/ecf6fa9d-2c3a-4445-81fc-0ab4c01d2ed6"
                 alt=""
               />
+              <h5 className="dronemessage">LET'S DO IT!!</h5>
             </div>
           </div>
           <div className="info">

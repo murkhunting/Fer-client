@@ -12,8 +12,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 
-    .right {
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin-top: 20px;
+      h1 {
+        font-size: 39px;
+      }
+    }
+    .center {
+      position: absolute;
+      left: 49%;
       display: flex;
       align-items: center;
       img {
@@ -27,7 +40,7 @@
       }
     }
 
-    .left {
+    .right {
       cursor: pointer;
     }
   }
