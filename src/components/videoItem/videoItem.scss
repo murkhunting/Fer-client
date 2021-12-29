@@ -6,11 +6,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 
   .videoname {
     position: absolute;
-    margin-top: 40vh;
-    color: white;
+    margin-top: 20%;
+    color: black;
 
     span {
       font-size: 60px;
@@ -22,7 +23,7 @@
     }
 
     &:hover {
-      color: black;
+      color: white;
     }
   }
 

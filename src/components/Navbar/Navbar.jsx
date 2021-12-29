@@ -13,12 +13,10 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="container">
-        {/* <div className="left">
-          <h1>FERNANDO MARÍ REBOLLO</h1>
-          <h5>- DRONE PILOT: VIDEO & PHOTOGRAPHY -</h5>
-        </div> */}
         <div className="center">
-          <img src={logo} alt="" />
+          <Link to="/" className="link">
+            <img src={logo} alt="" />
+          </Link>
         </div>
         <div className="right">
           <div onClick={showMenu}>MENU</div>
@@ -26,10 +24,21 @@ const Navbar = () => {
       </div>
       <div className={menu ? "menu active" : "menu"}>
         <div className="menucontainer">
-          <span>VIDEOS</span>
-          <span>PHOTOS</span>
-          <span>HOW I WORK</span>
-          <span>CONTACT</span>
+          <Link to="/" className="link">
+            <span onClick={showMenu}>HOME</span>
+          </Link>
+          <Link to="/videos" className="link">
+            <span onClick={showMenu}>VIDEOS</span>
+          </Link>
+          <Link to="/photos" className="link">
+            <span onClick={showMenu}>PHOTOS</span>
+          </Link>
+          <Link to="/how" className="link">
+            <span onClick={showMenu}>HOW I WORK</span>
+          </Link>
+          <Link to="/contact" className="link">
+            <span onClick={showMenu}>CONTACT</span>
+          </Link>
           <div>
             <IoClose className="closeicon" onClick={showMenu} />
           </div>

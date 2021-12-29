@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   text-align: justify;
+  //   background-color: rgb(163, 193, 197);
 
   .name {
     margin: 20px 0 20px 0;
@@ -16,8 +17,9 @@
   .container {
     margin-top: 80px;
     width: 95%;
-    height: 700px;
+    // height: 700px;
     display: flex;
+    overflow: hidden;
 
     .left {
       width: 65%;
@@ -38,7 +40,6 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: top;
-      background-color: white;
 
       .drone {
         width: 100%;
@@ -81,6 +82,7 @@
             transition: all 1s ease-in;
             object-fit: cover;
             position: absolute;
+            border-radius: 10px;
           }
           .dronemessage {
             margin-top: 130px;
@@ -91,6 +93,7 @@
           }
           .dronelogo:hover + .dronegif {
             transform: translateY(51px);
+            border-radius: 10px;
           }
           .dronelogo:active {
             transform: translateY(0);
@@ -101,8 +104,8 @@
       .info {
         margin-top: 20px;
         width: 70%;
-        height: 28%;
-        background-color: rgb(238, 238, 238);
+        height: 35%;
+        background-color: lightgray;
         border-radius: 20px;
         display: flex;
         flex-direction: row;
@@ -117,7 +120,7 @@
 
           span {
             font-size: 15px;
-            font-weight: 600;
+            font-weight: 700;
             margin-top: 25px;
             margin-bottom: 30px;
           }
@@ -134,14 +137,22 @@
           align-items: center;
           justify-content: space-around;
           margin-top: 30px;
+
           span {
             font-size: 15px;
             font-weight: 600;
             margin-bottom: 30px;
           }
-          h5 {
-            font-size: 20px;
-            margin-bottom: 26px;
+
+          .medialogos {
+            display: flex;
+            flex-direction: row;
+            h5 {
+              font-size: 20px;
+              margin-bottom: 26px;
+              margin-right: 20px;
+              margin-left: 10px;
+            }
           }
         }
       }

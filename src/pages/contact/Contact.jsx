@@ -1,7 +1,9 @@
 import React from "react";
 import "./contact.scss";
 import { HiArrowRight } from "react-icons/hi";
-import { BsInstagram, BsFacebook } from "react-icons/bs";
+import { BsFacebook } from "react-icons/bs";
+import { FaVimeo, FaYoutube } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
 import dronelogo from "../../assets/images/dronelogo.png";
 
 const Contact = () => {
@@ -35,17 +37,27 @@ const Contact = () => {
           <div className="info">
             <div className="touch">
               <span>GET IN TOUCH:</span>
-              <h5>fernandomarí@gmail.com</h5>
               <h5>637998024</h5>
+              <h5>fernandomarí@gmail.com</h5>
             </div>
             <div className="media">
               <span>SOCIAL MEDIA:</span>
-              <h5>
-                <BsInstagram />
-              </h5>
-              <h5>
-                <BsFacebook />
-              </h5>
+              <div className="medialogos">
+                <h5>
+                  <RiInstagramFill />
+                </h5>
+                <h5>
+                  <BsFacebook />
+                </h5>
+              </div>
+              <div className="medialogos">
+                <h5>
+                  <FaYoutube />
+                </h5>
+                <h5>
+                  <FaVimeo />
+                </h5>
+              </div>
             </div>
           </div>
         </div>
