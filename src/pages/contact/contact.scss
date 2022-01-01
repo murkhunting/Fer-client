@@ -15,7 +15,7 @@
     }
   }
   .container {
-    margin-top: 80px;
+    margin-top: 60px;
     width: 95%;
     // height: 700px;
     display: flex;
@@ -30,16 +30,17 @@
       font-size: 70px;
       font-weight: 700;
       span {
-        margin: 3% 10% 0 10%;
+        margin: 34px 50px 0 16%;
       }
     }
 
     .right {
-      width: 60%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: top;
+      margin-right: 70px;
 
       .drone {
         width: 100%;
@@ -47,13 +48,14 @@
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        justify-content: space-between;
+        justify-content: space-around;
 
         .locations {
           display: flex;
           flex-direction: column;
-          align-items: flex-start;
-          justify-content: space-around;
+
+          margin-top: 22px;
+          margin-right: 40px;
 
           span {
             font-size: 100px;
@@ -66,34 +68,42 @@
           overflow: hidden;
           align-items: flex-start;
           justify-content: center;
-          width: 290px;
-          margin: 0 80px 0 40px;
+          width: 100%;
+          margin: 0 40px 0 0;
           border-bottom: 1px solid black;
-          height: 222px;
+          height: 243px;
           position: relative;
 
           .dronelogo {
             width: 100px;
-            transform: translateY(170px);
+            transform: translateY(191px);
             transition: all 1s ease-in;
+            cursor: pointer;
           }
           .dronegif {
-            transform: translateY(222px);
+            transform: translateY(243px);
             transition: all 1s ease-in;
             object-fit: cover;
             position: absolute;
             border-radius: 10px;
+            z-index: -200;
           }
           .dronemessage {
-            margin-top: 130px;
+            margin-top: 60px;
+            font-size: 25px;
             position: absolute;
+            color: white;
+            z-index: -100;
           }
           .dronelogo:hover {
             transform: translateY(0);
           }
           .dronelogo:hover + .dronegif {
-            transform: translateY(51px);
+            transform: translateY(49px);
             border-radius: 10px;
+          }
+          .dronelogo:hover + .dronemessage {
+            color: black;
           }
           .dronelogo:active {
             transform: translateY(0);
@@ -102,8 +112,8 @@
       }
 
       .info {
-        margin-top: 20px;
-        width: 70%;
+        margin-top: 60px;
+        width: 80%;
         height: 35%;
         background-color: lightgray;
         border-radius: 20px;
@@ -119,7 +129,7 @@
           justify-content: space-around;
 
           span {
-            font-size: 15px;
+            font-size: 20px;
             font-weight: 700;
             margin-top: 25px;
             margin-bottom: 30px;
@@ -139,7 +149,7 @@
           margin-top: 30px;
 
           span {
-            font-size: 15px;
+            font-size: 20px;
             font-weight: 600;
             margin-bottom: 30px;
           }

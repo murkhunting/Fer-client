@@ -13,14 +13,19 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="container">
+        <div className="right">
+          <div onClick={showMenu}>MENU</div>
+        </div>
         <div className="center">
           <Link to="/" className="link">
             <img src={logo} alt="" />
           </Link>
         </div>
-        <div className="right">
-          <div onClick={showMenu}>MENU</div>
-        </div>
+        <Link to="/contact" className="link">
+          <div className="right">
+            <div>CONTACT</div>
+          </div>
+        </Link>
       </div>
       <div className={menu ? "menu active" : "menu"}>
         <div className="menucontainer">

@@ -47,12 +47,12 @@ const Contact = () => {
                   <RiInstagramFill />
                 </h5>
                 <h5>
-                  <BsFacebook />
+                  <FaYoutube />
                 </h5>
               </div>
               <div className="medialogos">
                 <h5>
-                  <FaYoutube />
+                  <BsFacebook />
                 </h5>
                 <h5>
                   <FaVimeo />
