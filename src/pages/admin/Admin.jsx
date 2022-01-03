@@ -3,7 +3,7 @@ import "./admin.scss";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-import { FaRegTrashAlt } from "react-icons/fa";
+import { FiTrash2 } from "react-icons/fi";
 
 const Admin = () => {
   const [items, setItems] = useState([]);
@@ -20,6 +20,19 @@ const Admin = () => {
     getAllProjects();
   }, []);
 
+  const deleteProject = async (id) => {
+    try {
+      await axios.delete(`http://localhost:8800/api/project/${id}`);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const handleDelete = (id) => {
+    deleteProject(id);
+    window.location.reload(false);
+  };
+
   return (
     <div className="admin">
       <div className="list">
@@ -29,7 +42,10 @@ const Admin = () => {
             <div className="wrap">
               <div>{project.titulo}</div>
               <button>
-                <FaRegTrashAlt className="icon" />
+                <FiTrash2
+                  className="icon"
+                  onClick={() => handleDelete(project._id)}
+                />
               </button>
             </div>
           ))}
