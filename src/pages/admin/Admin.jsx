@@ -1,11 +1,37 @@
 import React from "react";
 import "./admin.scss";
+import { useState, useEffect } from "react";
+import axios from "axios";
+
+import { FaRegTrashAlt } from "react-icons/fa";
 
 const Admin = () => {
+  const [items, setItems] = useState([]);
+  useEffect(() => {
+    const getAllProjects = async () => {
+      try {
+        const res = await axios.get("http://localhost:8800/api/project/all");
+        setItems(res.data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    getAllProjects();
+  }, []);
   return (
     <div className="admin">
       <div className="list">
         <h1> LISTA DE PROYECTOS: </h1>
+        <div className="container">
+          {items.map((project) => (
+            <div className="wrap">
+              <div>{project.titulo}</div>
+              <button>
+                <FaRegTrashAlt className="icon" />
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
       <div className="create">
         <h1>CREA UN NUEVO PROYECTO:</h1>
