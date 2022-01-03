@@ -6,7 +6,7 @@ const PhotoList = () => {
   return (
     <div className="photolist">
       <div className="photos">
-        <h1>- PHOTO PROJECTS -</h1>
+        <h1>PHOTO PROJECTS</h1>
       </div>
       <div className="container">
         <PhotoItem />

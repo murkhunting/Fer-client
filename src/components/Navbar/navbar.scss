@@ -23,7 +23,7 @@
       justify-content: center;
       margin-top: 20px;
     }
-    
+
     .center {
       position: absolute;
       margin-top: 8px;
@@ -34,7 +34,7 @@
         transition: transform 0.5s ease-in-out;
       }
       img:hover {
-        transform: rotate(-360deg);
+        transform: rotate(360deg);
       }
     }
 

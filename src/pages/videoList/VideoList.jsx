@@ -6,7 +6,7 @@ const VideoList = () => {
   return (
     <div className="videolist">
       <div className="videos">
-        <h1>- VIDEO PROJECTS -</h1>
+        <h1>VIDEO PROJECTS</h1>
       </div>
       <div className="container">
         <VideoItem />
