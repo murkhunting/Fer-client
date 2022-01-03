@@ -7,6 +7,7 @@ import { FaRegTrashAlt } from "react-icons/fa";
 
 const Admin = () => {
   const [items, setItems] = useState([]);
+
   useEffect(() => {
     const getAllProjects = async () => {
       try {
@@ -18,6 +19,7 @@ const Admin = () => {
     };
     getAllProjects();
   }, []);
+
   return (
     <div className="admin">
       <div className="list">
