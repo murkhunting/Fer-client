@@ -5,6 +5,7 @@ import "./videoItem.scss";
 const VideoItem = (video) => {
   const [isHovered, setIsHovered] = useState(false);
   const { titulo, byn, gif } = video.video;
+
   return (
     <div className="videoitem">
       <div

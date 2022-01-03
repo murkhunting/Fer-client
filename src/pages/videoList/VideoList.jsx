@@ -18,14 +18,14 @@ const VideoList = () => {
     };
     getAllVideos();
   }, []);
-  console.log(videos)
+
   return (
     <div className="videolist">
       <div className="videos">
         <h1>VIDEO PROJECTS</h1>
       </div>
       <div className="container">
-      {videos.map((video) => (
+        {videos.map((video) => (
           <VideoItem key={video._id} video={video} />
         ))}
       </div>
