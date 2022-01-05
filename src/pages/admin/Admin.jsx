@@ -7,7 +7,49 @@ import { FiTrash2 } from "react-icons/fi";
 
 const Admin = () => {
   const [items, setItems] = useState([]);
+  const [project, setProject] = useState({});
 
+  //create project
+  const [linksadd, setLinksadd] = useState([]);
+  let [link, setLink] = useState();
+
+  const handleLink = (e) => {
+    const link = e.target.value;
+    setLink(link);
+  };
+
+  const addLink = (e) => {
+    e.preventDefault();
+    let linkslist = linksadd.concat(link);
+    setLinksadd(linkslist);
+    setProject({ ...project, links: linksadd });
+  };
+
+  const handleChange = (e) => {
+    const value = e.target.value;
+    setProject({ ...project, [e.target.name]: value });
+  };
+
+  const createProject = async (project) => {
+    console.log(project);
+    try {
+      const res = await axios.post(
+        "http://localhost:8800/api/project",
+        project
+      );
+      const data = res.data;
+      console.log(data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const handleCreate = (e) => {
+    e.preventDefault();
+    createProject(project);
+  };
+
+  //get all projects
   useEffect(() => {
     const getAllProjects = async () => {
       try {
@@ -20,6 +62,7 @@ const Admin = () => {
     getAllProjects();
   }, []);
 
+  //delete project
   const deleteProject = async (id) => {
     try {
       await axios.delete(`http://localhost:8800/api/project/${id}`);
@@ -39,7 +82,7 @@ const Admin = () => {
         <h1> LISTA DE PROYECTOS: </h1>
         <div className="container">
           {items.map((project) => (
-            <div className="wrap">
+            <div className="wrap" key={project._id}>
               <div>{project.titulo}</div>
               <button>
                 <FiTrash2
@@ -55,31 +98,62 @@ const Admin = () => {
         <h1>CREA UN NUEVO PROYECTO:</h1>
         <form className="container">
           <div className="cover">
+            <h2>Es un Video o son Fotos?</h2>
+            <select name="type" id="type" onChange={handleChange}>
+              <option value="video">Video</option>
+              <option value="photo">Fotos</option>
+            </select>
+          </div>
+          <div className="cover">
             <h2>Título del proyecto:</h2>
-            <input type="text" placeholder="Título en mayúsculas..." />
+            <input
+              type="text"
+              placeholder="Título en mayúsculas..."
+              name="titulo"
+              onChange={handleChange}
+            />
           </div>
           <div className="cover">
             <h2>Descripción del proyecto:</h2>
-            <input type="text" placeholder="Pon una descripción..." />
-          </div>
-          <div className="cover">
-            <h2>Es un Video o son Fotos?</h2>
-            <input type="text" placeholder="Video o Fotos" />
+            <input
+              type="text"
+              placeholder="Pon una descripción..."
+              name="desc"
+              onChange={handleChange}
+            />
           </div>
           <div className="cover">
             <h2>Link de la imágen en b&n:</h2>
-            <input type="text" placeholder="Inserta la url..." />
+            <input
+              type="text"
+              placeholder="Inserta la url..."
+              name="byn"
+              onChange={handleChange}
+            />
           </div>
           <div className="cover">
             <h2>Link del gif o imágen del proyecto:</h2>
-            <input type="text" placeholder="Inserta la url..." />
+            <input
+              type="text"
+              placeholder="Inserta la url..."
+              name="gif"
+              onChange={handleChange}
+            />
           </div>
           <div className="cover">
             <h2>Link del Video o Links de las Fotos:</h2>
-            <input type="text" placeholder="Inserta la url..." />
+            <div>
+              <input
+                type="text"
+                placeholder="Inserta la url..."
+                name="links"
+                onChange={handleLink}
+              />
+              <button onClick={addLink}>+</button>
+            </div>
           </div>
 
-          <button>CREAR</button>
+          <button onClick={handleCreate}>CREAR</button>
         </form>
       </div>
     </div>

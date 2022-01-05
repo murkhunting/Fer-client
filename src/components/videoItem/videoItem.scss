@@ -1,16 +1,16 @@
 .videoitem {
   width: 97vw;
-  height: 50vw;
+  height: 45vw;
   margin: 5px 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   position: relative;
 
   .videoname {
     position: absolute;
-    margin-top: 20%;
     color: black;
     text-decoration: none;
 
@@ -20,6 +20,7 @@
     }
 
     h3 {
+      position: absolute;
       font-size: 24px;
     }
 
