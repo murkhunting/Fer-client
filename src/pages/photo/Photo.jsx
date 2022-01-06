@@ -19,7 +19,7 @@ const Photo = () => {
       }
     };
     getPhotos();
-  }, []);
+  }, [id]);
 
   console.log(photos);
 
