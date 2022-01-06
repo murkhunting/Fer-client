@@ -9,7 +9,7 @@ const Admin = () => {
   const [items, setItems] = useState([]);
   const [project, setProject] = useState({});
 
-  //create project
+  //info from inputs
   const [linksadd, setLinksadd] = useState([]);
   let [link, setLink] = useState();
 
@@ -22,6 +22,7 @@ const Admin = () => {
     e.preventDefault();
     let linkslist = linksadd.concat(link);
     setLinksadd(linkslist);
+    setLink("");
     setProject({ ...project, links: linksadd });
   };
 
@@ -30,6 +31,7 @@ const Admin = () => {
     setProject({ ...project, [e.target.name]: value });
   };
 
+  //create project
   const createProject = async (project) => {
     console.log(project);
     try {
@@ -47,6 +49,7 @@ const Admin = () => {
   const handleCreate = (e) => {
     e.preventDefault();
     createProject(project);
+    window.location.reload(false);
   };
 
   //get all projects
@@ -147,13 +150,25 @@ const Admin = () => {
                 type="text"
                 placeholder="Inserta la url..."
                 name="links"
+                value={link}
                 onChange={handleLink}
               />
-              <button onClick={addLink}>+</button>
+              <button className="add" onClick={addLink}>
+                +
+              </button>
+            </div>
+            <div className="linkscount">
+              {linksadd.map((link) => (
+                <div key={link} className="link">
+                  -{link}-
+                </div>
+              ))}
             </div>
           </div>
 
-          <button onClick={handleCreate}>CREAR</button>
+          <button className="createbtn" onClick={handleCreate}>
+            CREAR
+          </button>
         </form>
       </div>
     </div>
