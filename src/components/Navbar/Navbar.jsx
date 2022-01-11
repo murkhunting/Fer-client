@@ -8,7 +8,6 @@ import logo from "../../assets/images/logofer.png";
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const location = useLocation();
-  console.log(location);
 
   const refresh = () => {
     if (location.pathname === "/") {

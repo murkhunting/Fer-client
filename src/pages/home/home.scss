@@ -21,3 +21,26 @@
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 600px) {
+  .home {
+    .name {
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .home {
+    .name {
+      h1 {
+        font-size: 20px;
+      }
+    }
+    .container {
+      width: 92%;
+    }
+  }
+}
