@@ -35,7 +35,8 @@
         width: 40px;
         transition: transform 0.5s ease-in-out;
       }
-      img:hover {
+      img:hover,
+      img:active {
         transform: rotate(360deg);
       }
     }
@@ -53,6 +54,9 @@
     background-color: rgba(162, 162, 162, 0.95);
     transform: translateY(-150%);
     transition: all 0.7s ease-out;
+    .menucontainer {
+      display: none;
+    }
   }
 
   .menu.active {
@@ -85,6 +89,36 @@
 
       .closeicon:hover {
         color: lightgray;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    .container {
+      padding: 0px 20px;
+    }
+    .menu.active {
+      .menucontainer {
+        h1 {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .navbar {
+    .container {
+      padding: 0px 10px;
+    }
+    .menu.active {
+      .menucontainer {
+        h1 {
+          font-size: 43px;
+        }
       }
     }
   }

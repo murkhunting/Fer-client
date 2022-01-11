@@ -10,7 +10,8 @@
     object-fit: cover;
   }
 
-  &:hover {
+  &:hover,
+  &:active {
     overflow: hidden;
 
     .blackwhite {
