@@ -86,7 +86,9 @@ const Admin = () => {
         <div className="container">
           {items.map((project) => (
             <div className="wrap" key={project._id}>
-              <div>{project.titulo}</div>
+              <div>
+                {project.titulo} - {project.type}
+              </div>
               <button>
                 <FiTrash2
                   className="icon"
@@ -121,6 +123,33 @@ const Admin = () => {
             <input
               type="text"
               placeholder="Pon una descripción..."
+              name="desc"
+              onChange={handleChange}
+            />
+          </div>
+          <div className="cover">
+            <h2>Año del proyecto:</h2>
+            <input
+              type="text"
+              placeholder="Escribe el año..."
+              name="desc"
+              onChange={handleChange}
+            />
+          </div>
+          <div className="cover">
+            <h2>Localización:</h2>
+            <input
+              type="text"
+              placeholder="Escribe dónde se grabó..."
+              name="desc"
+              onChange={handleChange}
+            />
+          </div>
+          <div className="cover">
+            <h2>Cliente:</h2>
+            <input
+              type="text"
+              placeholder="Nombre del cliente..."
               name="desc"
               onChange={handleChange}
             />

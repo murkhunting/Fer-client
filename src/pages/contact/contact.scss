@@ -17,12 +17,13 @@
   .container {
     margin-top: 60px;
     width: 95%;
-    // height: 700px;
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
     overflow: hidden;
 
     .left {
-      width: 65%;
+      width: 700px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -30,12 +31,12 @@
       font-size: 70px;
       font-weight: 700;
       span {
-        margin: 34px 50px 0 16%;
+        margin: 34px 50px 0 80px;
       }
     }
 
     .right {
-      width: 50%;
+      width: 700px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -70,19 +71,19 @@
           justify-content: center;
           width: 100%;
           margin: 0 40px 0 0;
-          border-bottom: 1px solid black;
+          border-bottom: 1px solid rgb(121, 121, 121);
           height: 243px;
           position: relative;
 
           .dronelogo {
             width: 100px;
             transform: translateY(191px);
-            transition: all 1s ease-in;
+            transition: all 0.7s ease-in;
             cursor: pointer;
           }
           .dronegif {
             transform: translateY(243px);
-            transition: all 1s ease-in;
+            transition: all 0.7s ease-in;
             object-fit: cover;
             position: absolute;
             border-radius: 10px;
@@ -113,7 +114,7 @@
 
       .info {
         margin-top: 60px;
-        width: 80%;
+        width: 450px;
         height: 35%;
         background-color: rgba(211, 211, 211, 0.5);
         border-radius: 20px;
@@ -146,7 +147,6 @@
           flex-direction: column;
           align-items: center;
           justify-content: flex-start;
-          
 
           span {
             font-size: 20px;

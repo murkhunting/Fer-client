@@ -10,10 +10,12 @@ import PhotoList from "./pages/photoList/PhotoList.jsx";
 import Video from "./pages/video/Video.jsx";
 import VideoList from "./pages/videoList/VideoList.jsx";
 import Admin from "./pages/admin/Admin.jsx";
+import Login from "./pages/admin/Login.jsx";
 
 import Navbar from "./components/Navbar/Navbar.jsx";
 
 function App() {
+  const user = true;
   return (
     <Router>
       <Navbar />
@@ -26,7 +28,7 @@ function App() {
           <Route path="/photos/:id" element={<Photo />} />
           <Route path="/videos" element={<VideoList />} />
           <Route path="/videos/:id" element={<Video />} />
-          <Route path="/admin" element={<Admin />} />
+          <Route path="/admin" element={user ? <Admin /> : <Login />} />
         </Routes>
       </main>
     </Router>
