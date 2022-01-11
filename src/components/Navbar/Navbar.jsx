@@ -15,6 +15,11 @@ const Navbar = () => {
       <div className="design">DESIGN & CODE BY: MURKHUNTING</div>
       <div className="navbar">
         <div className="container">
+          <Link to="/contact" className="link">
+            <div className="right">
+              <div>CONTACT</div>
+            </div>
+          </Link>
           <div className="right">
             <div onClick={showMenu}>MENU</div>
           </div>
@@ -23,11 +28,6 @@ const Navbar = () => {
               <img src={logo} alt="" />
             </Link>
           </div>
-          <Link to="/contact" className="link">
-            <div className="right">
-              <div>CONTACT</div>
-            </div>
-          </Link>
         </div>
         <div className={menu ? "menu active" : "menu"}>
           <div className="menucontainer">

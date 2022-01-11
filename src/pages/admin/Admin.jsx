@@ -30,7 +30,7 @@ const Admin = () => {
     const value = e.target.value;
     setProject({ ...project, [e.target.name]: value });
   };
-
+  console.log(project);
   //create project
   const createProject = async (project) => {
     console.log(project);
@@ -132,7 +132,7 @@ const Admin = () => {
             <input
               type="text"
               placeholder="Escribe el año..."
-              name="desc"
+              name="year"
               onChange={handleChange}
             />
           </div>
@@ -141,7 +141,7 @@ const Admin = () => {
             <input
               type="text"
               placeholder="Escribe dónde se grabó..."
-              name="desc"
+              name="loca"
               onChange={handleChange}
             />
           </div>
@@ -150,7 +150,7 @@ const Admin = () => {
             <input
               type="text"
               placeholder="Nombre del cliente..."
-              name="desc"
+              name="client"
               onChange={handleChange}
             />
           </div>

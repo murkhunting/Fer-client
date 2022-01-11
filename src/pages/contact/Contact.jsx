@@ -9,14 +9,10 @@ import dronelogo from "../../assets/images/dronelogo.png";
 const Contact = () => {
   return (
     <div className="contact">
-      {/* <div className="name">
-        <h1>FERNANDO MARÍ REBOLLO</h1>
-        <h5>DRONE PILOT: VIDEO & PHOTOGRAPHY</h5>
-      </div> */}
       <div className="container">
         <div className="left">
           <span>DO YOU HAVE A PROJECT IN MIND?</span>
-          <span>LET'S TALK ABOUT IT. {<HiArrowRight />}</span>
+          <span>LET'S TALK ABOUT IT. {<HiArrowRight className="arrow" />}</span>
         </div>
         <div className="right">
           <div className="drone">
@@ -37,8 +33,8 @@ const Contact = () => {
           <div className="info">
             <div className="touch">
               <span>GET IN TOUCH:</span>
-              <h5>637998024</h5>
               <h5>fernandomarí@gmail.com</h5>
+              <h5>637998024</h5>
             </div>
             <div className="media">
               <span>SOCIAL MEDIA:</span>

@@ -4,16 +4,7 @@
   align-items: center;
   justify-content: center;
   text-align: justify;
-  //   background-color: rgb(163, 193, 197);
 
-  .name {
-    margin: 20px 0 20px 0;
-    position: sticky;
-
-    h1 {
-      font-size: 38px;
-    }
-  }
   .container {
     margin-top: 60px;
     width: 95%;
@@ -165,6 +156,102 @@
               margin-left: 10px;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  .contact {
+    .container {
+      .left {
+        font-size: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1159px) {
+  .contact {
+    .container {
+      .left {
+        font-size: 55px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .contact {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .left {
+        text-align: center;
+
+        span {
+          margin: 34px 100px 0 100px;
+        }
+        .arrow {
+          transform: rotate(90deg);
+        }
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: top;
+        margin-right: 0px;
+
+        .drone {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+
+          .locations {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            margin-right: 0px;
+
+            span {
+              margin: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .contact {
+    .container {
+      .left {
+        width: 500px;
+        font-size: 40px;
+      }
+      .right {
+        .drone {
+          .locations {
+            span {
+              font-size: 60px;
+              margin: 10px;
+            }
+          }
+        }
+        .info {
+          height: auto;
+          width: auto;
+          flex-direction: column;
+          padding: 20px 25px 0 25px;
         }
       }
     }
