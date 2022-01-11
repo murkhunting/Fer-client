@@ -57,22 +57,24 @@
 
   .menu.active {
     transform: translateY(-50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .menucontainer {
-      margin-top: 100px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-size: 60px;
       color: white;
       font-weight: 600;
 
-      span {
-        padding: 10px 0;
+      h1 {
+        font-size: 70px;
+        margin-bottom: 15px;
       }
 
-      span:hover {
+      h1:hover {
         color: lightgray;
       }
 
