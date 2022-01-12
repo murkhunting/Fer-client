@@ -21,9 +21,7 @@ const PhotoList = () => {
 
   return (
     <div className="photolist">
-      <div className="photos">
-        <h1>PHOTO PROJECTS</h1>
-      </div>
+      <h1>PHOTO PROJECTS</h1>
       <div className="container">
         {photos.map((photo) => (
           <PhotoItem key={photo._id} photo={photo} />
