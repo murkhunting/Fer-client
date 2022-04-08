@@ -21,9 +21,9 @@ const Admin = () => {
   const addLink = (e) => {
     e.preventDefault();
     let linkslist = linksadd.concat(link);
-    setLinksadd(linkslist);
+
     setLink("");
-    setProject({ ...project, links: linksadd });
+    setProject({ ...project, links: linkslist });
   };
 
   const handleChange = (e) => {
@@ -31,6 +31,7 @@ const Admin = () => {
     setProject({ ...project, [e.target.name]: value });
   };
   console.log(project);
+
   //create project
   const createProject = async (project) => {
     console.log(project);

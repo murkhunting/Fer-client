@@ -22,11 +22,11 @@ const Home = () => {
     <div className="home">
       <div className="name">
         <h1>FERNANDO MARÍ REBOLLO</h1>
-        <h5>DRONE PILOT: VIDEO & PHOTOGRAPHY</h5>
       </div>
+      <h5>DRONE PILOT: VIDEO & PHOTOGRAPHY</h5>
       <div className="container">
         {items.map((project) => (
-          <Item key={project._id} project={project} />
+          <Item className="list" key={project._id} project={project} />
         ))}
       </div>
     </div>

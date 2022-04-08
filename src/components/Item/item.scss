@@ -1,12 +1,13 @@
 .item {
-  width: 420px;
-  height: 550px;
-  margin: 5px 5px;
+  width: 33.3333333%;
+  height: 50vh;
+  margin: 0;
   overflow: hidden;
   text-decoration: none;
   color: black;
 
   .blackwhite {
+    height: 70vh;
     object-fit: cover;
   }
 
@@ -35,9 +36,21 @@
     }
 
     .gif {
-      height: 550px;
+      height: 70vh;
       object-fit: cover;
       z-index: -99;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  .item {
+    width: 100%;
   }
 }

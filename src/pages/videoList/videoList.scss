@@ -8,14 +8,24 @@
   h1 {
     margin: 80px 0 20px 0;
     font-size: 38px;
+    position: sticky;
+    top: 0;
+    z-index: 300;
   }
 
   .container {
-    width: 95%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    .video {
+      scroll-snap-align: center;
+    }
   }
 }
 
@@ -24,9 +34,6 @@
     h1 {
       font-size: 30px;
     }
-    .container {
-      width: 90%;
-    }
   }
 }
 
@@ -34,10 +41,6 @@
   .videolist {
     h1 {
       font-size: 20px;
-    }
-
-    .container {
-      width: 88%;
     }
   }
 }

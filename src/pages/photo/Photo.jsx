@@ -21,6 +21,8 @@ const Photo = () => {
     getPhotos();
   }, [id]);
 
+  console.log(photos);
+
   return (
     <div className="photo">
       <h1>SINGLE PHOTO PAGE</h1>

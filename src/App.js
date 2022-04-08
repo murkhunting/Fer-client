@@ -15,7 +15,7 @@ import Login from "./pages/admin/Login.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 
 function App() {
-  const user = false;
+  const user = true;
   return (
     <Router>
       <Navbar />

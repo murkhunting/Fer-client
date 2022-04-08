@@ -7,13 +7,15 @@ import axios from "axios";
 const Video = () => {
   const { id } = useParams();
 
-  const [video, setVideo] = useState();
+  const [titulo, setTitulo] = useState();
+  const [desc, setDesc] = useState();
 
   useEffect(() => {
     const getVideo = async () => {
       try {
         const res = await axios.get(`http://localhost:8800/api/project/${id}`);
-        setVideo(res.data);
+        setTitulo(res.data.titulo);
+        setDesc(res.data.desc);
       } catch (err) {
         console.log(err);
       }
@@ -21,11 +23,10 @@ const Video = () => {
     getVideo();
   }, [id]);
 
-  console.log(video);
-
   return (
     <div className="video">
-      <h1>SINGLE VIDEO PAGE</h1>
+      <h1>{titulo}</h1>
+      <p>{desc}</p>
     </div>
   );
 };
