@@ -1,13 +1,15 @@
 .item {
-  width: 33.3333333%;
-  height: 50vh;
+  width: 50%;
+  height: 60vh;
   margin: 0;
   overflow: hidden;
   text-decoration: none;
-  color: black;
+  color: white;
 
   .blackwhite {
-    height: 70vh;
+    width: 100%;
+    height: 60vh;
+    filter: grayscale(100%);
     object-fit: cover;
   }
 
@@ -36,7 +38,8 @@
     }
 
     .gif {
-      height: 70vh;
+      width: 100%;
+      height: 60vh;
       object-fit: cover;
       z-index: -99;
     }

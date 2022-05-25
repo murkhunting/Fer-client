@@ -25,7 +25,7 @@ const VideoItem = (video) => {
       <div>
         {isHovered ? (
           <>
-            <img className="blackwhite" src={gif} alt="" />
+            <img className="gif" src={gif} alt="" />
           </>
         ) : (
           <>

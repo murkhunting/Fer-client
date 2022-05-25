@@ -33,21 +33,23 @@ const Navbar = () => {
         </div>
         <div className={menu ? "menu active" : "menu"}>
           <div className="menucontainer">
-            <Link to="/" className="link">
-              <h1 onClick={showMenu}>HOME</h1>
-            </Link>
             <Link to="/videos" className="link">
               <h1 onClick={showMenu}>VIDEOS</h1>
             </Link>
             <Link to="/photos" className="link">
               <h1 onClick={showMenu}>PHOTOS</h1>
             </Link>
+            <Link to="/" className="link">
+              <h1 onClick={showMenu}>AIRCHITECTURE</h1>
+            </Link>
             <Link to="/how" className="link">
               <h1 onClick={showMenu}>HOW I WORK</h1>
             </Link>
+            <h1>INFO</h1>
             <Link to="/contact" className="link">
               <h1 onClick={showMenu}>CONTACT</h1>
             </Link>
+
             <div>
               <IoClose className="closeicon" onClick={showMenu} />
             </div>

@@ -85,29 +85,45 @@ const Admin = () => {
       <div className="list">
         <h1> LISTA DE PROYECTOS: </h1>
         <div className="container">
-          {items.map((project) => (
-            <div className="wrap" key={project._id}>
-              <div>
-                {project.titulo} - {project.type}
+          {items
+            .filter((project, i) => project.type === "video")
+            .map((project, i) => (
+              <div className="wrap" key={project._id}>
+                <div>
+                  {project.titulo} - {project.type}
+                </div>
+                <button>
+                  <FiTrash2
+                    className="icon"
+                    onClick={() => handleDelete(project._id)}
+                  />
+                </button>
               </div>
-              <button>
-                <FiTrash2
-                  className="icon"
-                  onClick={() => handleDelete(project._id)}
-                />
-              </button>
-            </div>
-          ))}
+            ))}
         </div>
       </div>
+
       <div className="create">
         <h1>CREA UN NUEVO PROYECTO:</h1>
         <form className="container">
           <div className="cover">
             <h2>Es un Video o son Fotos?</h2>
             <select name="type" id="type" onChange={handleChange}>
+              <option hidden selected>
+                elige una opción
+              </option>
               <option value="video">Video</option>
               <option value="photo">Fotos</option>
+            </select>
+          </div>
+          <div className="cover">
+            <h2>Es un proyecto de Arquitectura?</h2>
+            <select name="type" id="type" onChange={handleChange}>
+              <option hidden selected>
+                elige una opción
+              </option>
+              <option value="true">Sí</option>
+              <option value="false">No</option>
             </select>
           </div>
           <div className="cover">
