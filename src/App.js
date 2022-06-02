@@ -11,6 +11,7 @@ import Video from "./pages/video/Video.jsx";
 import VideoList from "./pages/videoList/VideoList.jsx";
 import Admin from "./pages/admin/Admin.jsx";
 import Login from "./pages/admin/Login.jsx";
+import Architect from "./pages/architect/Architect.jsx";
 
 import Navbar from "./components/Navbar/Navbar.jsx";
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/photos/:id" element={<Photo />} />
           <Route path="/videos" element={<VideoList />} />
           <Route path="/videos/:id" element={<Video />} />
+          <Route path="/architect" element={<Architect />} />
           <Route path="/admin" element={user ? <Admin /> : <Login />} />
         </Routes>
       </main>

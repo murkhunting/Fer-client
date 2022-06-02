@@ -3,6 +3,8 @@ import "./home.scss";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Item from "../../components/Item/Item";
+import useScrollSnap from 'react-use-scroll-snap';
+
 
 const Home = () => {
   const [items, setItems] = useState([]);

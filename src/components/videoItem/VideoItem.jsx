@@ -3,12 +3,15 @@ import { useState } from "react";
 import "./videoItem.scss";
 import { Link } from "react-router-dom";
 
+
+
 const VideoItem = (video) => {
   const [isHovered, setIsHovered] = useState(false);
   const { titulo, byn, gif, _id } = video.video;
+  
 
   return (
-    <div className="videoitem">
+    <div className="videoitem" >
       <Link to={`/videos/${_id}`} className="videoname">
         <div
           onMouseEnter={() => setIsHovered(true)}

@@ -25,6 +25,9 @@ const Navbar = () => {
           <div className="right">
             <div onClick={showMenu}>MENU</div>
           </div>
+          <div classç="right">
+            <div>CONTACT</div>
+          </div>
           <div className="center">
             <Link to="/" className="link">
               <img onClick={refresh} src={logo} alt="" />
