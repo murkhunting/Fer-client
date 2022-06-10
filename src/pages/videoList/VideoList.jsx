@@ -1,6 +1,6 @@
 import React from "react";
 import "./videoList.scss";
-import VideoItem from "../../components/videoItem/VideoItem";
+import ProjectItem from "../../components/projectItem/ProjectItem";
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import useScrollSnap from 'react-use-scroll-snap';
@@ -32,8 +32,8 @@ const VideoList = () => {
       <h3>Drone </h3>
         
       <div className="container" >
-          {videos.map((video) => (
-            <VideoItem  key={video._id} video={video} />
+          {videos.map((project) => (
+            <ProjectItem  key={project._id} project={project} />
             ))}
       </div>
         

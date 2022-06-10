@@ -1,6 +1,6 @@
 import React from "react";
 import "./architect.scss";
-import VideoItem from "../../components/videoItem/VideoItem";
+import ProjectItem from "../../components/projectItem/ProjectItem";
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import useScrollSnap from 'react-use-scroll-snap';
@@ -33,8 +33,8 @@ const Architect = () => {
       <div className="container" ref={scrollRef}>
           {projects
           // .filter((project, i) => project.type === "video")
-          .map((video) => (
-            <VideoItem  key={video._id} video={video} />
+          .map((project) => (
+            <ProjectItem  key={project._id} project={project} />
             ))}
       </div>
         

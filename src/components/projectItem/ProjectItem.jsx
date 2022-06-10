@@ -1,18 +1,18 @@
 import React from "react";
 import { useState } from "react";
-import "./videoItem.scss";
+import "./projectItem.scss";
 import { Link } from "react-router-dom";
 
 
 
-const VideoItem = (video) => {
+const ProjectItem = (project) => {
   const [isHovered, setIsHovered] = useState(false);
-  const { titulo, byn, gif, _id, type } = video.video;
+  const { titulo, byn, gif, _id, type } = project.project;
   
 
   return (
-    <div className="videoitem" >
-      <Link to={`/${type}s/${_id}`} className="videoname">
+    <div className="projectitem" >
+      <Link to={`/${type}s/${_id}`} className="projectname">
         <div
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
@@ -40,4 +40,4 @@ const VideoItem = (video) => {
   );
 };
 
-export default VideoItem;
+export default ProjectItem;
