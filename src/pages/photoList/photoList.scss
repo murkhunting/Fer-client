@@ -4,18 +4,22 @@
   align-items: center;
   justify-content: center;
   text-align: justify;
+  overflow: hidden;
 
   h1 {
-    margin: 80px 0 20px 0;
+    margin: 70px 0 30px 0;
     font-size: 38px;
+    top: 0;
+    z-index: 100;
   }
 
   .container {
-    width: 95%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
   }
 }
 
@@ -24,9 +28,6 @@
     h1 {
       font-size: 30px;
     }
-    .container {
-      width: 90%;
-    }
   }
 }
 
@@ -34,10 +35,6 @@
   .photolist {
     h1 {
       font-size: 20px;
-    }
-
-    .container {
-      width: 88%;
     }
   }
 }

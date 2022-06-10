@@ -42,13 +42,15 @@ const Navbar = () => {
             <Link to="/photos" className="link">
               <h1 onClick={showMenu}>PHOTOS</h1>
             </Link>
-            <Link to="/" className="link">
+            <Link to="/architect" className="link">
               <h1 onClick={showMenu}>AIRCHITECTURE</h1>
             </Link>
             <Link to="/how" className="link">
               <h1 onClick={showMenu}>HOW I WORK</h1>
             </Link>
+            <Link to="/info" className="link">
             <h1>INFO</h1>
+            </Link>
             <Link to="/contact" className="link">
               <h1 onClick={showMenu}>CONTACT</h1>
             </Link>

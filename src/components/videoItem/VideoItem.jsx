@@ -7,12 +7,12 @@ import { Link } from "react-router-dom";
 
 const VideoItem = (video) => {
   const [isHovered, setIsHovered] = useState(false);
-  const { titulo, byn, gif, _id } = video.video;
+  const { titulo, byn, gif, _id, type } = video.video;
   
 
   return (
     <div className="videoitem" >
-      <Link to={`/videos/${_id}`} className="videoname">
+      <Link to={`/${type}s/${_id}`} className="videoname">
         <div
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}

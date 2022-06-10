@@ -28,12 +28,11 @@ const Architect = () => {
 
   return (
     <div className="architect">
-      <h1>ARCHITECTURE PROJECTS LIST</h1>
-      <h3>Drone </h3>
+      <h1>ARCHITECTURE PROJECTS</h1>
         
       <div className="container" ref={scrollRef}>
           {projects
-          .filter((project, i) => project.type === "video")
+          // .filter((project, i) => project.type === "video")
           .map((video) => (
             <VideoItem  key={video._id} video={video} />
             ))}

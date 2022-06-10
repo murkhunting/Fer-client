@@ -1,6 +1,6 @@
 import React from "react";
 import "./photoList.scss";
-import PhotoItem from "../../components/photoItem/PhotoItem";
+import VideoItem from "../../components/videoItem/VideoItem";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -23,8 +23,8 @@ const PhotoList = () => {
     <div className="photolist">
       <h1>PHOTO PROJECTS</h1>
       <div className="container">
-        {photos.map((photo) => (
-          <PhotoItem key={photo._id} photo={photo} />
+        {photos.map((video) => (
+          <VideoItem key={video._id} video={video} />
         ))}
       </div>
     </div>
