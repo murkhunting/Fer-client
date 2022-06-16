@@ -5,33 +5,45 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
   position: relative;
   
   .blackwhite, .gif{
-
-  width: 100vw;
+    width: 100vw;
     height: 101vh;
     object-fit: cover;
     overflow: hidden;
   }
   .projectname {
-    position: absolute;
+    position:absolute;
     color: white;
     text-decoration: none;
+    
+    div{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
 
-    span {
-      font-size: 2vw;
-      font-weight: 600;
+
+      span {
+        font-size: 2vw;
+        font-weight: 600;
+        
+      }
+  
+      h3 {
+        
+        font-size: 1vw;
+      }
+  
+      &:hover {
+        color: white;
+      }
     }
 
-    h3 {
-      position: absolute;
-      font-size: 1vw;
-    }
-
-    &:hover {
-      color: white;
-    }
   }
 }

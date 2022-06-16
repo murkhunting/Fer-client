@@ -9,9 +9,9 @@ import useScrollSnap from 'react-use-scroll-snap';
 const VideoList = () => {
   const [videos, setVideos] = useState([]);
 
-  // const scrollRef = useRef(null);
+  const scrollRef = useRef(null);
 
-  // useScrollSnap({ ref: scrollRef, duration: 0, delay: 0 });
+  useScrollSnap({ ref: scrollRef, duration: 100, delay: 0 });
 
 
   useEffect(() => {
@@ -28,10 +28,9 @@ const VideoList = () => {
 
   return (
     <div className="videolist">
-      <h1>VIDEO PROJECTS LIST</h1>
-      <h3>Drone </h3>
+      <h1>VIDEO PROJECTS</h1>
         
-      <div className="container" >
+      <div className="container" ref={scrollRef}>
           {videos.map((project) => (
             <ProjectItem  key={project._id} project={project} />
             ))}

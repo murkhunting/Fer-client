@@ -25,7 +25,7 @@ const Navbar = () => {
           <div className="right">
             <div onClick={showMenu}>MENU</div>
           </div>
-          <div classç="right">
+          <div className="right">
             <div>CONTACT</div>
           </div>
           <div className="center">

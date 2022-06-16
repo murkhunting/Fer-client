@@ -1,12 +1,18 @@
 import React from "react";
 import "./photoList.scss";
 import ProjecItem from "../../components/projectItem/ProjectItem";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import axios from "axios";
-import ProjectItem from "../../components/projectItem/ProjectItem";
+import useScrollSnap from 'react-use-scroll-snap';
+
 
 const PhotoList = () => {
   const [photos, setPhotos] = useState([]);
+
+  const scrollRef = useRef(null);
+
+  useScrollSnap({ ref: scrollRef, duration: 100, delay: 0 });
+
 
   useEffect(() => {
     const getAllPhotos = async () => {
@@ -23,9 +29,9 @@ const PhotoList = () => {
   return (
     <div className="photolist">
       <h1>PHOTO PROJECTS</h1>
-      <div className="container">
+      <div className="container" ref={scrollRef}>
         {photos.map((project) => (
-          <ProjectItem key={project._id} project={project} />
+          <ProjecItem key={project._id} project={project} />
         ))}
       </div>
     </div>
