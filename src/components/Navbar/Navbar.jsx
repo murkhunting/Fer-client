@@ -22,17 +22,15 @@ const Navbar = () => {
       <div className="design">DESIGN & CODE BY: MURKHUNTING</div>
       <div className="navbar">
         <div className="container">
-          <div className="right">
-            <div onClick={showMenu}>MENU</div>
-          </div>
-          <div className="right">
-            <div>CONTACT</div>
-          </div>
           <div className="center">
             <Link to="/" className="link">
               <img onClick={refresh} src={logo} alt="" />
             </Link>
           </div>
+          <div className="right">
+            <div onClick={showMenu}>MENU</div>
+          </div>
+          
         </div>
         <div className={menu ? "menu active" : "menu"}>
           <div className="menucontainer">
@@ -49,7 +47,7 @@ const Navbar = () => {
               <h1 onClick={showMenu}>HOW I WORK</h1>
             </Link>
             <Link to="/info" className="link">
-            <h1>INFO</h1>
+            <h1 onClick={showMenu}>INFO</h1>
             </Link>
             <Link to="/contact" className="link">
               <h1 onClick={showMenu}>CONTACT</h1>

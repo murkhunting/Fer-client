@@ -86,7 +86,7 @@ const Admin = () => {
         <h1> LISTA DE PROYECTOS: </h1>
         <div className="container">
           {items
-            .filter((project, i) => project.type === "video")
+            // .filter((project, i) => project.type === "video")
             .map((project, i) => (
               <div className="wrap" key={project._id}>
                 <div>

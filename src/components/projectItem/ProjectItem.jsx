@@ -20,7 +20,7 @@ const ProjectItem = (project) => {
           <span>{titulo}</span>
           {isHovered && (
             <>
-              <h3>- View Project -</h3>
+              <h3>View Project</h3>
             </>
           )}
         </div>

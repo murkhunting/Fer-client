@@ -7,11 +7,10 @@
     overflow: hidden;
   
     h1 {
-      margin: 90px 0 50px 0;
+      position:absolute;
       font-size: 38px;
-  
-      top: 0;
-      z-index: 1 00;
+      top: 10px;
+      z-index: 100;
     }
   
     .container {

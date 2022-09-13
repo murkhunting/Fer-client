@@ -25,7 +25,7 @@ const Home = () => {
       <div className="name">
         <h1>FERNANDO MARÍ REBOLLO</h1>
       </div>
-      <h5>DRONE PILOT: VIDEO & PHOTOGRAPHY</h5>
+      <h5>DRONE PILOT: VIDEO, PHOTOGRAPHY & ARCHITECTURE</h5>
       <div className="container">
         {items.map((project) => (
           <Item className="list" key={project._id} project={project} />

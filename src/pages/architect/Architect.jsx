@@ -28,7 +28,7 @@ const Architect = () => {
 
   return (
     <div className="architect">
-      <h1>ARCHITECTURE PROJECTS</h1>
+      <h1>ARCHITECTURE</h1>
         
       <div className="container" ref={scrollRef}>
           {projects

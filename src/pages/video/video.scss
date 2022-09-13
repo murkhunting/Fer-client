@@ -1,13 +1,43 @@
 .video{
-    scroll-snap-type: mandatory;
-    .container{
-
-        section{
-            height: 100vh;
-            width: 100%;
-            scroll-snap-align: start;
-            background-color: aqua;
-            border: 1px solid black;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    h1{
+        margin-left: 50vw;
+        
+        position: fixed;
+        top: 10px;
+        z-index: 100;
+        
+    }
+    .cage{
+        display:flex;
+        align-items: flex-start;
+        .container{
+            align-items:flex-start;
+            position:relative;
+            display:flex;
+            flex-direction: row;
+            padding-top: 80px;
+            .data{
+                width:25vw;
+            padding: 2vw;
+            border-right: 1px solid grey ;
+            text-align:justify;
+            display:flex;
+            flex-direction: column;
+            justify-content:flex-start;
+            align-items:flex-start;
         }
+        .player-wrapper{
+            width:45vw;
+            padding: 2vw;
+            .player{
+                width:fit-content;
+                text-align: center;
+            }
+        }
+    }
     }
 }

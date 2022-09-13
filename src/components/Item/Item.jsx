@@ -17,7 +17,7 @@ const Item = (project) => {
           <>
             <div className="iteminfo">
               <h3>{titulo}</h3>
-              <h5>{type} project</h5>
+              <h5> - {type} project -</h5>
             </div>
             <img className="gif" src={gif} alt="" />
           </>

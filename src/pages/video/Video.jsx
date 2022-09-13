@@ -3,17 +3,13 @@ import "./video.scss";
 import { useParams } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
-import useScrollSnap from 'react-use-scroll-snap';
+import ReactPlayer from 'react-player';
 
 const Video = () => {
   const { id } = useParams();
 
   const [titulo, setTitulo] = useState();
   const [desc, setDesc] = useState();
-
-  const scrollRef = useRef(null);
-
-  useScrollSnap({ ref: scrollRef, duration: 100, delay: 50 });
 
   useEffect(() => {
     const getVideo = async () => {
@@ -31,25 +27,18 @@ const Video = () => {
   return (
     <div className="video">
       <h1>{titulo}</h1>
-      <p>{desc}</p>
+<div className="cage">
 
-      <div className="container" ref={scrollRef}>
-        <section>
-
-        </section>
-        <section>
-          
-        </section>
-        <section>
-          
-        </section>
-        <section>
-          
-        </section>
-        <section>
-          
-        </section>
+      <div className="container" >
+        <div className ="data">
+          <h3>Descripción del proyecto:</h3>
+          <p>{desc}</p>
+        </div>
+        <div className="player-wrapper">
+        <ReactPlayer  className="player" url="https://www.youtube.com/watch?v=abOjzMPYdgc&t=12s" controls="true"/>
+        </div>
       </div>
+</div>
     </div>
   );
 };

@@ -5,6 +5,7 @@ import "./app.scss";
 import Home from "./pages/home/Home.jsx";
 import Contact from "./pages/contact/Contact.jsx";
 import How from "./pages/how/How.jsx";
+import Info from "./pages/info/Info.jsx";
 import Photo from "./pages/photo/Photo.jsx";
 import PhotoList from "./pages/photoList/PhotoList.jsx";
 import Video from "./pages/video/Video.jsx";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/how" element={<How />} />
+          <Route path="/info" element={<Info />} />
           <Route path="/photos" element={<PhotoList />} />
           <Route path="/photos/:id" element={<Photo />} />
           <Route path="/videos" element={<VideoList />} />
