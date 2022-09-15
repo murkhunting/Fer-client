@@ -10,14 +10,16 @@
 }
 .navbar {
   width: 100%;
-  font-size: 20px;
   position: fixed;
   top: 0;
   z-index: 500;
-  font-weight: 600;
+  
   // background: rgba(255, 255, 255, 0.453);
-
+  
   .container {
+    color: rgba(40, 40, 40, 0.814);
+    font-weight: 800;
+    font-size: 23px;
     padding: 0px 50px;
     height: 50px;
     display: flex;
@@ -30,8 +32,8 @@
       margin-left: -20px;
 
       img {
-        width: 40px;
-        margin-top: 10px;
+        width: 70px;
+        margin: 120px 0 0 80px;
         transition: transform 0.5s ease-in-out;
       }
       img:hover,
@@ -41,6 +43,9 @@
     }
 
     .right {
+      background-color: rgba(197, 197, 197, 0.544);
+      padding: 10px;
+      margin-top: 20px;
       cursor: pointer;
     }
   }
@@ -72,10 +77,17 @@
       align-items: center;
       justify-content: center;
       color: white;
-      font-weight: 600;
+
+      .social {
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        justify-content: center;
+      }     
 
       h1 {
-        font-size: 50px;
+        font-size: 40px;
+        font-weight: 800;
         margin-bottom: 15px;
       }
 

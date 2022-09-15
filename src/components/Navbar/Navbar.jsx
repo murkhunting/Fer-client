@@ -3,6 +3,8 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./navbar.scss";
 import { IoClose } from "react-icons/io5";
+import { CgInstagram, CgFacebook } from "react-icons/cg"
+import {RiYoutubeLine} from "react-icons/ri"
 import logo from "../../assets/images/logofer.png";
 
 const Navbar = () => {
@@ -34,6 +36,7 @@ const Navbar = () => {
         </div>
         <div className={menu ? "menu active" : "menu"}>
           <div className="menucontainer">
+            <h1>HOME</h1>
             <Link to="/videos" className="link">
               <h1 onClick={showMenu}>VIDEOS</h1>
             </Link>
@@ -52,6 +55,11 @@ const Navbar = () => {
             <Link to="/contact" className="link">
               <h1 onClick={showMenu}>CONTACT</h1>
             </Link>
+            <div className="social">
+              <CgInstagram/>
+              <CgFacebook/>
+              <RiYoutubeLine/>
+            </div>
 
             <div>
               <IoClose className="closeicon" onClick={showMenu} />

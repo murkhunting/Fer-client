@@ -17,7 +17,7 @@ import Architect from "./pages/architect/Architect.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 
 function App() {
-  const user = true;
+  const login = false;
   return (
     <Router>
       <Navbar />
@@ -32,7 +32,7 @@ function App() {
           <Route path="/videos" element={<VideoList />} />
           <Route path="/videos/:id" element={<Video />} />
           <Route path="/architect" element={<Architect />} />
-          <Route path="/admin" element={user ? <Admin /> : <Login />} />
+          <Route path="/admin" element={login ? <Admin /> : <Login />} />
         </Routes>
       </main>
     </Router>

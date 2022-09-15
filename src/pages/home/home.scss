@@ -1,21 +1,28 @@
+
 .home {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: justify;
+  text-align: center;
+  color: rgba(40, 40, 40, 0.814);
+  background-image: url("../../assets/images/fondo.jpg");
 
   .name {
-    margin: 10px 0 0 0;
+    margin: 120px 0 0 0;
     z-index: 200;
 
     h1 {
-      font-size: 38px;
+      font-size: 75px;
+      font-weight: 800;
+      margin-bottom: -10px;
     }
   }
 
   h5 {
-    margin-bottom: 50px;
+    font-size: 16px;
+    margin: 20px 0 100px 0;
+    font-weight: 800;
   }
   .container {
     display: flex;
