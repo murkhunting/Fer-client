@@ -1,39 +1,44 @@
-
 .home {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: rgba(40, 40, 40, 0.814);
+  color: rgb(75, 75, 75);
   background-image: url("../../assets/images/fondo.jpg");
 
-  .name {
-    margin: 120px 0 0 0;
-    z-index: 200;
+  .head {
+    display: flex;
+    flex-direction: row;
+    .name {
+      margin: 120px 0 0 0;
+      z-index: 200;
 
-    h1 {
-      font-size: 75px;
-      font-weight: 800;
-      margin-bottom: -10px;
+      h1 {
+        font-size: 75px;
+        font-weight: 800;
+        margin-bottom: -10px;
+      }
+      h5 {
+        font-size: 18px;
+        font-weight: 800;
+        margin: 20px 0 100px 0;
+      }
+    }
+    img {
+      width: 350px;
+      height: 280px;
+      margin: 170px -300px 80px 50px;
     }
   }
 
-  h5 {
-    font-size: 16px;
-    margin: 20px 0 100px 0;
-    font-weight: 800;
-  }
   .container {
     display: flex;
     align-content: center;
-
     justify-content: center;
     flex-wrap: wrap;
-
     max-width: 100vw;
     position: relative;
-
     width: 100%;
     padding-left: 0;
     padding-right: 0;

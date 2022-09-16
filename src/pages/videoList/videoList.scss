@@ -3,14 +3,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: justify;
+  text-align: center;
   overflow: hidden;
+  color: rgb(75, 75, 75);
+  background-image: url("../../assets/images/fondo.jpg");
 
-  h1 {
-    position:absolute;
-    font-size: 38px;
-    top: 10px;
-    z-index: 100;
+  .text {
+    margin: 120px 0 0 0;
+    z-index: 200;
+
+    h1 {
+      font-size: 75px;
+      font-weight: 800;
+      margin-bottom: -10px;
+    }
+    h5 {
+      font-size: 16px;
+      font-weight: 800;
+      margin: 20px 0 100px 0;
+    }
   }
 
   .container {

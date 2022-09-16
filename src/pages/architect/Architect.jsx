@@ -3,8 +3,7 @@ import "./architect.scss";
 import ProjectItem from "../../components/projectItem/ProjectItem";
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
-import useScrollSnap from 'react-use-scroll-snap';
-
+import useScrollSnap from "react-use-scroll-snap";
 
 const Architect = () => {
   const [projects, setProjects] = useState([]);
@@ -12,7 +11,6 @@ const Architect = () => {
   const scrollRef = useRef(null);
 
   useScrollSnap({ ref: scrollRef, duration: 100, delay: 0 });
-
 
   useEffect(() => {
     const getAllVideos = async () => {
@@ -28,16 +26,18 @@ const Architect = () => {
 
   return (
     <div className="architect">
-      <h1>ARCHITECTURE</h1>
-        
+      <div className="text">
+        <h1>ARCHITECTURE</h1>
+        <h1>PROJECTS</h1>
+        <h5>· ARCHITECTURE RELATED VIDEO & PHOTO EXAMPLES ·</h5>
+      </div>
       <div className="container" ref={scrollRef}>
-          {projects
+        {projects
           // .filter((project, i) => project.type === "video")
           .map((project) => (
-            <ProjectItem  key={project._id} project={project} />
-            ))}
+            <ProjectItem key={project._id} project={project} />
+          ))}
       </div>
-        
     </div>
   );
 };

@@ -3,8 +3,8 @@ import "./home.scss";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Item from "../../components/Item/Item";
-import useScrollSnap from 'react-use-scroll-snap';
-
+// import useScrollSnap from "react-use-scroll-snap";
+import drone from "../../assets/images/drone.png";
 
 const Home = () => {
   const [items, setItems] = useState([]);
@@ -22,11 +22,14 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="name">
-        <h1>FERNANDO</h1>
-        <h1>MARÍ</h1>
+      <div className="head">
+        <div className="name">
+          <h1>FERNANDO</h1>
+          <h1>MARÍ</h1>
+          <h5>· DRONE PILOT: VIDEO, PHOTOGRAPHY & ARCHITECTURE ·</h5>
+        </div>
+        <img src={drone} alt="" />
       </div>
-      <h5>DRONE PILOT: VIDEO, PHOTOGRAPHY & ARCHITECTURE</h5>
       <div className="container">
         {items.map((project) => (
           <Item className="list" key={project._id} project={project} />

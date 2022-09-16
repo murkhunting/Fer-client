@@ -3,8 +3,7 @@ import "./videoList.scss";
 import ProjectItem from "../../components/projectItem/ProjectItem";
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
-import useScrollSnap from 'react-use-scroll-snap';
-
+import useScrollSnap from "react-use-scroll-snap";
 
 const VideoList = () => {
   const [videos, setVideos] = useState([]);
@@ -12,7 +11,6 @@ const VideoList = () => {
   const scrollRef = useRef(null);
 
   useScrollSnap({ ref: scrollRef, duration: 100, delay: 0 });
-
 
   useEffect(() => {
     const getAllVideos = async () => {
@@ -28,14 +26,16 @@ const VideoList = () => {
 
   return (
     <div className="videolist">
-      <h1>VIDEO PROJECTS</h1>
-        
-      <div className="container" ref={scrollRef}>
-          {videos.map((project) => (
-            <ProjectItem  key={project._id} project={project} />
-            ))}
+      <div className="text">
+        <h1>VIDEO </h1>
+        <h1>PROJECTS</h1>
+        <h5>· DRONE-MADE VIDEO PROJECTS TO HAVE REAL EXAMPLES OF MY WORK ·</h5>
       </div>
-        
+      <div className="container" ref={scrollRef}>
+        {videos.map((project) => (
+          <ProjectItem className="video" key={project._id} project={project} />
+        ))}
+      </div>
     </div>
   );
 };
