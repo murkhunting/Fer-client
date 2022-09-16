@@ -15,26 +15,30 @@ import Login from "./pages/admin/Login.jsx";
 import Architect from "./pages/architect/Architect.jsx";
 
 import Navbar from "./components/Navbar/Navbar.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   const login = false;
   return (
     <Router>
       <Navbar />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/how" element={<How />} />
-          <Route path="/info" element={<Info />} />
-          <Route path="/photos" element={<PhotoList />} />
-          <Route path="/photos/:id" element={<Photo />} />
-          <Route path="/videos" element={<VideoList />} />
-          <Route path="/videos/:id" element={<Video />} />
-          <Route path="/architect" element={<Architect />} />
-          <Route path="/admin" element={login ? <Admin /> : <Login />} />
-        </Routes>
-      </main>
+      <div className="content">
+        <main className="wrap">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/how" element={<How />} />
+            <Route path="/info" element={<Info />} />
+            <Route path="/photos" element={<PhotoList />} />
+            <Route path="/photos/:id" element={<Photo />} />
+            <Route path="/videos" element={<VideoList />} />
+            <Route path="/videos/:id" element={<Video />} />
+            <Route path="/architect" element={<Architect />} />
+            <Route path="/admin" element={login ? <Admin /> : <Login />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }
