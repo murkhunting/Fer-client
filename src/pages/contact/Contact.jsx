@@ -1,6 +1,6 @@
 import React from "react";
 import "./contact.scss";
-import { HiArrowRight } from "react-icons/hi";
+import { BsArrow90DegRight } from "react-icons/bs";
 import drone from "../../assets/images/drone.png";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FiSmartphone } from "react-icons/fi";
@@ -12,8 +12,12 @@ const Contact = () => {
     <div className="contact">
       <div className="container">
         <div className="name">
+          <h1>DO YOU HAVE</h1>
           <h1>A PROJECT IN MIND?</h1>
-          <h1>GET IN TOUCH {<HiArrowRight className="arrow" />}</h1>
+          <div className="touch">
+            <h1>GET IN TOUCH</h1>
+            <h1> {<BsArrow90DegRight className="arrow" />}</h1>
+          </div>
           <img src={drone} alt="" />
         </div>
       </div>

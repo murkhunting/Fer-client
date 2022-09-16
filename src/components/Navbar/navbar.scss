@@ -24,13 +24,11 @@
       img {
         width: 100px;
         margin: 120px 0 0 100px;
-        transition: transform 0.5s ease-in-out, scale 0.3s ease-in-out;
+        transition: transform 0.5s ease-in-out;
       }
       img:hover,
       img:active {
-        transform: rotate(-360deg);
-        scale: 1.1;
-        opacity: 0.8;
+        transform: rotate(360deg);
       }
     }
 

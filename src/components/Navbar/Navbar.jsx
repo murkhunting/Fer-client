@@ -5,7 +5,7 @@ import "./navbar.scss";
 import { IoCloseSharp } from "react-icons/io5";
 import { CgInstagram, CgFacebook } from "react-icons/cg";
 import { RiYoutubeLine } from "react-icons/ri";
-import logo from "../../assets/images/logoprueba.png";
+import logo from "../../assets/images/logoprueba5.png";
 import burger from "../../assets/images/burger.png";
 
 const Navbar = () => {
