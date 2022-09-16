@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./navbar.scss";
-import { IoClose } from "react-icons/io5";
+import { IoCloseSharp } from "react-icons/io5";
 import { CgInstagram, CgFacebook } from "react-icons/cg"
 import {RiYoutubeLine} from "react-icons/ri"
 import logo from "../../assets/images/logofer.png";
@@ -26,12 +26,12 @@ const Navbar = () => {
         <div className="container">
           <div className="center">
             <Link to="/" className="link">
-              <img onClick={refresh} src={logo} alt="" />
+              <img onClick={showMenu} src={logo} alt="" />
             </Link>
           </div>
-          <div className="right">
+          {/* <div className="right">
             <div onClick={showMenu}>MENU</div>
-          </div>
+          </div> */}
           
         </div>
         <div className={menu ? "menu active" : "menu"}>
@@ -56,13 +56,13 @@ const Navbar = () => {
               <h1 onClick={showMenu}>CONTACT</h1>
             </Link>
             <div className="social">
-              <CgInstagram/>
+              {/* <CgInstagram/>
               <CgFacebook/>
-              <RiYoutubeLine/>
+              <RiYoutubeLine/> */}
             </div>
 
             <div>
-              <IoClose className="closeicon" onClick={showMenu} />
+              <IoCloseSharp className="closeicon" onClick={showMenu} />
             </div>
           </div>
         </div>
