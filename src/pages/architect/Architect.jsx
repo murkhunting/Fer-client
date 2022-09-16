@@ -28,7 +28,6 @@ const Architect = () => {
     <div className="architect">
       <div className="text">
         <h1>ARCHITECTURE</h1>
-        <h1>PROJECTS</h1>
         <h5>· ARCHITECTURE RELATED VIDEO & PHOTO EXAMPLES ·</h5>
       </div>
       <div className="container" ref={scrollRef}>

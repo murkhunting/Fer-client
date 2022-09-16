@@ -27,8 +27,7 @@ const VideoList = () => {
   return (
     <div className="videolist">
       <div className="text">
-        <h1>VIDEO </h1>
-        <h1>PROJECTS</h1>
+        <h1>VIDEO PROJECTS</h1>
         <h5>· DRONE-MADE VIDEO PROJECTS TO HAVE REAL EXAMPLES OF MY WORK ·</h5>
       </div>
       <div className="container" ref={scrollRef}>

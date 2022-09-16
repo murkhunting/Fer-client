@@ -3,161 +3,66 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: justify;
+  text-align: center;
+  color: rgb(75, 75, 75);
+  background-image: url("../../assets/images/fondo.jpg");
 
   .container {
-    margin-top: 60px;
-    width: 95%;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    overflow: hidden;
+    flex-direction: row;
+    .name {
+      margin: 120px 0 0 0;
+      z-index: 200;
 
-    .left {
-      width: 700px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      text-align: left;
-      font-size: 70px;
-      font-weight: 700;
-      span {
-        margin: 34px 50px 0 80px;
+      h1 {
+        font-size: 75px;
+        font-weight: 800;
+        margin-bottom: -10px;
       }
     }
+    img {
+      width: 350px;
+      height: 280px;
+      margin: 70px 0 0 0;
+    }
+  }
 
-    .right {
-      width: 700px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: top;
-      margin-right: 70px;
+  .arrow {
+    transform: rotate(90deg);
+  }
 
-      .drone {
-        width: 100%;
-        height: 265px;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-around;
+  h5 {
+    font-size: 18px;
+    font-weight: 800;
+    margin: 20px 0 100px 0;
+  }
 
-        .locations {
-          display: flex;
-          flex-direction: column;
+  h1 {
+    font-size: 75px;
+    font-weight: 800;
+  }
 
-          margin-top: 22px;
-          margin-right: 40px;
+  .info {
+    display: flex;
+    flex-direction: row;
+    margin: 60px 0 30px 0;
 
-          span {
-            font-size: 100px;
-            font-weight: 600;
-          }
-        }
+    .separador {
+      margin: 0 30px;
+      transition: transform 0.5s;
+      cursor: pointer;
 
-        .droneicon {
-          display: flex;
-          overflow: hidden;
-          align-items: flex-start;
-          justify-content: center;
-          width: 100%;
-          margin: 0 40px 0 0;
-          border-bottom: 1px solid rgb(121, 121, 121);
-          height: 243px;
-          position: relative;
-
-          .dronelogo {
-            width: 100px;
-            transform: translateY(191px);
-            transition: all 0.7s ease-in;
-            cursor: pointer;
-          }
-          .dronegif {
-            transform: translateY(243px);
-            transition: all 0.7s ease-in;
-            object-fit: cover;
-            position: absolute;
-            border-radius: 10px;
-            z-index: -200;
-          }
-          .dronemessage {
-            margin-top: 60px;
-            font-size: 25px;
-            position: absolute;
-            color: white;
-            z-index: -100;
-          }
-          .dronelogo:hover {
-            transform: translateY(0);
-          }
-          .dronelogo:hover + .dronegif {
-            transform: translateY(49px);
-            border-radius: 10px;
-          }
-          .dronelogo:hover + .dronemessage {
-            color: black;
-          }
-          .dronelogo:active {
-            transform: translateY(0);
-          }
-        }
+      .iconos {
+        font-size: 110px;
+        transition: transform 0.5s;
       }
-
-      .info {
-        margin-top: 60px;
-        width: 450px;
-        height: 35%;
-        background-color: rgba(211, 211, 211, 0.5);
-        border-radius: 20px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-
-        .touch {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: flex-start;
-
-          span {
-            font-size: 20px;
-            font-weight: 700;
-            margin-top: 15px;
-            margin-bottom: 30px;
-          }
-          h5 {
-            font-size: 15px;
-            font-weight: 500;
-            margin-bottom: 30px;
-          }
-        }
-
-        .media {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: flex-start;
-
-          span {
-            font-size: 20px;
-            font-weight: 600;
-            margin-top: 15px;
-            margin-bottom: 17px;
-          }
-
-          .medialogos {
-            display: flex;
-            flex-direction: row;
-            h5 {
-              font-size: 25px;
-              margin-bottom: 25px;
-              margin-right: 20px;
-              margin-left: 10px;
-            }
-          }
-        }
+      .iconos:hover {
+        transform: rotate(35deg);
       }
+    }
+    .separador:hover {
+      scale: 1.1;
+      opacity: 0.8;
     }
   }
 }

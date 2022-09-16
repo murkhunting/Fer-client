@@ -1,13 +1,3 @@
-.design {
-  position: fixed;
-  font-size: 10px;
-  font-weight: 700;
-  bottom: 190px;
-  right: 3px;
-  transform: rotate(-90deg);
-  transform-origin: 100% 100%;
-  z-index: 300;
-}
 .navbar {
   width: 100%;
   position: fixed;
@@ -111,18 +101,22 @@
         font-size: 40px;
         font-weight: 800;
         margin-bottom: 15px;
+        transition: scale 0.3s ease-in-out;
       }
 
       h1:hover {
+        scale: 1.1;
         color: lightgray;
       }
 
       .closeicon {
+        transition: scale 0.3s ease-in-out;
         cursor: pointer;
         font-size: 40px;
       }
 
       .closeicon:hover {
+        scale: 1.1;
         color: lightgray;
       }
     }

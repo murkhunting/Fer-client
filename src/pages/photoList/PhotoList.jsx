@@ -27,8 +27,8 @@ const PhotoList = () => {
   return (
     <div className="photolist">
       <div className="text">
-        <h1>PHOTO </h1>
-        <h1>PROJECTS</h1>
+        <h1>PHOTO PROJECTS</h1>
+
         <h5>· DRONE PILOT: VIDEO, PHOTOGRAPHY & ARCHITECTURE ·</h5>
       </div>
       <div className="container" ref={scrollRef}>

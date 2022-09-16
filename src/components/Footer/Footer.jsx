@@ -10,7 +10,7 @@ const Footer = () => {
           <h5>VIDEOS</h5>
         </Link>
         <Link to="/photos" className="link">
-          <h5>PHOTOS</h5>
+          <h5>PHOTO</h5>
         </Link>
         <Link to="/architect" className="link">
           <h5>AIRCHITECTURE</h5>

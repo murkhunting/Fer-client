@@ -22,7 +22,6 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="design">DESIGN & CODE BY: MURKHUNTING</div>
       <div className="navbar">
         <div className="container">
           <div className="center">
@@ -37,11 +36,14 @@ const Navbar = () => {
         </div>
         <div className={menu ? "menu active" : "menu"}>
           <div className="menucontainer">
+            <Link to="/" className="link">
+              <h1 onClick={showMenu}>HOME</h1>
+            </Link>
             <Link to="/videos" className="link">
               <h1 onClick={showMenu}>VIDEOS</h1>
             </Link>
             <Link to="/photos" className="link">
-              <h1 onClick={showMenu}>PHOTOS</h1>
+              <h1 onClick={showMenu}>PHOTO</h1>
             </Link>
             <Link to="/architect" className="link">
               <h1 onClick={showMenu}>AIRCHITECTURE</h1>
