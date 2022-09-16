@@ -32,8 +32,8 @@ const Footer = () => {
         <h5>Youtube</h5>
         <h5>Vimeo</h5>
       </div>
-      <div className="design">
-        <h6>DESIGN & CODE BY MURKHUNTING</h6>
+      <div className="diseño">
+        <h5>DESIGN & CODE BY MURKHUNTING</h5>
       </div>
     </div>
   );

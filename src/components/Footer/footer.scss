@@ -5,6 +5,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 60px 0 30px 0;
+  color: rgb(75, 75, 75);
 
   .menu {
     display: flex;
@@ -12,9 +14,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: rgb(75, 75, 75);
     font-size: 20px;
-    margin: 100px 0;
 
     h5 {
       margin: 0 15px;
@@ -28,8 +28,13 @@
   .social {
     display: flex;
     flex-direction: row;
+    margin: 30px 0 0 0;
+    h5 {
+      margin: 0 15px;
+    }
   }
-  .design {
+  .diseño {
     display: flex;
+    margin: 30px 0 0 0;
   }
 }
