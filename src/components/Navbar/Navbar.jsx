@@ -3,10 +3,14 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./navbar.scss";
 import { IoCloseSharp } from "react-icons/io5";
-import { CgInstagram, CgFacebook } from "react-icons/cg";
-import { RiYoutubeLine } from "react-icons/ri";
-import logo from "../../assets/images/logoprueba5.png";
-import burger from "../../assets/images/burger.png";
+import {
+  AiFillLinkedin,
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillYoutube,
+} from "react-icons/ai";
+import { FaVimeo } from "react-icons/fa";
+import logo from "../../assets/images/logoprueba6.png";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -58,9 +62,21 @@ const Navbar = () => {
               <h1 onClick={showMenu}>CONTACT</h1>
             </Link>
             <div className="social">
-              {/* <CgInstagram/>
-              <CgFacebook/>
-              <RiYoutubeLine/> */}
+              <h5 className="">
+                <AiFillLinkedin />
+              </h5>
+              <h5>
+                <AiFillFacebook />
+              </h5>
+              <h5>
+                <AiFillInstagram />
+              </h5>
+              <h5>
+                <AiFillYoutube />
+              </h5>
+              <h5>
+                <FaVimeo />
+              </h5>
             </div>
 
             <div>

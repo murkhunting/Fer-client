@@ -22,7 +22,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="info">
+      <div className="contactinfo">
         <div className="separador">
           <MdOutlineMailOutline className="iconos" />
           <h5>Fernando@gmail.com</h5>

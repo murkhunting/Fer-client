@@ -1,5 +1,32 @@
 .how {
-  h1 {
-    color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(75, 75, 75);
+  background-color: rgb(202, 214, 235);
+  padding-bottom: 1000px;
+
+  .head {
+    display: flex;
+    flex-direction: row;
+    .name {
+      margin: 120px 0 0 0;
+      z-index: 200;
+
+      h1 {
+        font-size: 75px;
+        font-weight: 800;
+        margin-bottom: -10px;
+      }
+    }
+    img {
+      position: absolute;
+      width: 350px;
+      top: 24vh;
+      right: 15vw;
+      transform: scaleX(-1);
+    }
   }
 }

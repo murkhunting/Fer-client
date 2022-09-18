@@ -1,6 +1,13 @@
 import React from "react";
 import "./footer.scss";
 import { Link } from "react-router-dom";
+import {
+  AiFillLinkedin,
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillYoutube,
+} from "react-icons/ai";
+import { FaVimeo } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -26,14 +33,24 @@ const Footer = () => {
         </Link>
       </div>
       <div className="social">
-        <h5>Linkdin</h5>
-        <h5>Facebook</h5>
-        <h5>Instagram</h5>
-        <h5>Youtube</h5>
-        <h5>Vimeo</h5>
+        <h5 className="">
+          <AiFillLinkedin />
+        </h5>
+        <h5>
+          <AiFillFacebook />
+        </h5>
+        <h5>
+          <AiFillInstagram />
+        </h5>
+        <h5>
+          <AiFillYoutube />
+        </h5>
+        <h5>
+          <FaVimeo />
+        </h5>
       </div>
       <div className="diseño">
-        <h5>DESIGN & CODE BY MURKHUNTING</h5>
+        <h5>DESIGN & CODE BY @MURKHUNTING</h5>
       </div>
     </div>
   );

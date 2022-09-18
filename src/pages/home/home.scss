@@ -22,13 +22,15 @@
       h5 {
         font-size: 18px;
         font-weight: 800;
-        margin: 20px 0 100px 0;
+        margin: 20px 0 150px 0;
       }
     }
     img {
+      position: absolute;
       width: 350px;
       height: 280px;
-      margin: 170px -300px 80px 50px;
+      top: 20vh;
+      right: 15vw;
     }
   }
 
