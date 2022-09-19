@@ -1,5 +1,10 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useContext } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import "./app.scss";
 
 import Home from "./pages/home/Home.jsx";
@@ -16,9 +21,10 @@ import Architect from "./pages/architect/Architect.jsx";
 
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import { AuthContext } from "./context/auth/AuthContext";
 
 function App() {
-  const login = false;
+  const { user } = useContext(AuthContext);
   return (
     <Router>
       <Navbar />
@@ -34,7 +40,14 @@ function App() {
             <Route path="/videos" element={<VideoList />} />
             <Route path="/videos/:id" element={<Video />} />
             <Route path="/architect" element={<Architect />} />
-            <Route path="/admin" element={login ? <Admin /> : <Login />} />
+            <Route
+              path="/login"
+              element={user ? <Navigate to="/admin" /> : <Login />}
+            />
+            <Route
+              path="/admin"
+              element={!user ? <Navigate to="/login" /> : <Admin />}
+            />
           </Routes>
         </main>
         <Footer />

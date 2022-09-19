@@ -8,7 +8,7 @@ const AuthReducer = (state, action) => {
       };
     case "LOGIN_SUCCESS":
       return {
-        user: action.playload,
+        user: action.payload,
         isFetching: false,
         error: false,
       };
