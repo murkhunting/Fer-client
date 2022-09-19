@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./login.scss";
 
 const Login = () => {
-  const [user, setUser] = useState();
+  const [user, setUser] = useState("");
 
   const handleChange = (e) => {
     const value = e.target.value;
@@ -10,16 +11,25 @@ const Login = () => {
   };
   console.log(user);
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    window.location.reload(false);
+    // window.location.reload(false);
+    if (!e.target.checkValidity()) {
+      console.log("not send");
+    } else {
+      const res = await axios.post(
+        "http://localhost:8800/api/auth/login",
+        user
+      );
+      console.log(res.data);
+    }
   };
 
   return (
     <div className="login">
       <form className="container">
         <div className="cover">
-          <h2>Admin Name:</h2>
+          <h2>Admin:</h2>
           <input
             type="text"
             placeholder="..."
