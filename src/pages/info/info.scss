@@ -24,8 +24,8 @@
     img {
       position: absolute;
       width: 350px;
-      top: 24vh;
-      right: 15vw;
+      top: 260px;
+      right: 12vw;
       transform: scaleX(-1);
     }
   }
@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    text-align: justify;
+    text-align: left;
     background-color: rgba(75, 75, 75, 0.4);
     color: rgb(247, 247, 247);
     margin: 100px 30vw 20px 18vw;
@@ -69,7 +69,7 @@
       flex-direction: column;
       align-items: left;
       justify-content: center;
-      text-align: justify;
+      text-align: left;
       color: rgb(247, 247, 247);
       margin: 0 50px;
       h5 {

@@ -35,6 +35,23 @@
       }
     }
 
+    .message {
+      padding: 10px 10px 0 10px;
+      background-color: rgba(247, 247, 247, 0.664);
+      border-radius: 50%;
+      position: fixed;
+      z-index:500;
+      bottom: 30px;
+      right: 50px;
+      font-size: 30px;
+      cursor: pointer;
+      transition: scale 0.3s ease-in-out;
+    }
+    .message:hover {
+      scale: 1.1;
+      opacity: 0.8;
+    }
+
     .right {
       padding: 10px;
       cursor: pointer;
