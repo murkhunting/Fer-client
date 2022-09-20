@@ -1,15 +1,17 @@
 import React from "react";
 import "./video.scss";
 import { useParams } from "react-router-dom";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
-import ReactPlayer from 'react-player';
 
 const Video = () => {
   const { id } = useParams();
 
   const [titulo, setTitulo] = useState();
   const [desc, setDesc] = useState();
+  const [year, setYear] = useState();
+  const [loca, setLoca] = useState();
+  const [client, setClient] = useState();
 
   useEffect(() => {
     const getVideo = async () => {
@@ -17,6 +19,9 @@ const Video = () => {
         const res = await axios.get(`http://localhost:8800/api/project/${id}`);
         setTitulo(res.data.titulo);
         setDesc(res.data.desc);
+        setYear(res.data.year);
+        setLoca(res.data.loca);
+        setClient(res.data.client);
       } catch (err) {
         console.log(err);
       }
@@ -27,18 +32,25 @@ const Video = () => {
   return (
     <div className="video">
       <h1>{titulo}</h1>
-<div className="cage">
-
-      <div className="container" >
-        <div className ="data">
-          <h3>Descripción del proyecto:</h3>
+      <div className="container">
+        <div className="data">
+          <h3>WHERE?</h3>
+          <p>{loca}</p>
+          <h3>WHEN?</h3>
+          <p>{year}</p>
+          <h3>FOR WHOM?</h3>
+          <p>{client}</p>
+          <h3>DESCRIPCIÓN:</h3>
           <p>{desc}</p>
         </div>
-        <div className="player-wrapper">
-        <ReactPlayer  className="player" url="https://www.youtube.com/watch?v=abOjzMPYdgc&t=12s" controls="true"/>
-        </div>
+        <iframe
+          src="https://www.youtube.com/embed/abOjzMPYdgc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen="true"
+        ></iframe>
       </div>
-</div>
     </div>
   );
 };

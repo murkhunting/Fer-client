@@ -118,7 +118,7 @@ const Admin = () => {
           </div>
           <div className="cover">
             <h2>Es un proyecto de Arquitectura?</h2>
-            <select name="type" id="type" onChange={handleChange}>
+            <select name="architecture" id="type" onChange={handleChange}>
               <option hidden selected>
                 elige una opción
               </option>

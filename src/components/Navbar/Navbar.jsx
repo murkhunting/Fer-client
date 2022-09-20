@@ -39,7 +39,7 @@ const Navbar = () => {
             <h5 onClick={showMenu}>MENU</h5>
           </div>
           <div className="message">
-            <HiOutlineChatAlt/>
+            <HiOutlineChatAlt />
           </div>
         </div>
         <div className={menu ? "menu active" : "menu"}>

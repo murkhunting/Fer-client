@@ -29,7 +29,7 @@ const Info = () => {
       <div className="drone1">
         <img src={drone1} alt="" />
         <div className="droneinfo">
-          <h5>DRONE 1 - DESTRUCTOR 3000XXY</h5>
+          <h5>DRONE 1 - DESTRUCTOR GENITAL 3000XXY</h5>
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit aenean
             venenatis lobortis volutpat suscipit, maecenas fames dictum magna
@@ -40,7 +40,7 @@ const Info = () => {
       </div>
       <div className="drone1">
         <div className="droneinfo">
-          <h5>DRONE 2 - EXTERMINADOR AGUILEÑO 7.5.4</h5>
+          <h5>DRONE 2 - EXTERMINADOR DE PUSSYS 7.5.4</h5>
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit aenean
             venenatis lobortis volutpat suscipit, maecenas fames dictum magna
