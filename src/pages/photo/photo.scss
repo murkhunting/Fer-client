@@ -1,0 +1,53 @@
+.photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(75, 75, 75);
+  background-color: rgb(247, 247, 247);
+
+  h1 {
+    margin: 120px 0 0 0;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: -10px;
+  }
+
+  .container {
+    padding-bottom: 100px;
+    align-items: flex-start;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+    .data {
+      width: 18vw;
+      margin: -25px 60px 0 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: right;
+      text-align: right;
+      position: sticky;
+      top: 120px;
+      h3 {
+        margin: 25px 0 15px 0;
+      }
+      p {
+        font-size: 18px;
+        padding-right: 10px;
+      }
+    }
+    .photosContainer {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 978px;
+        height: 550px;
+        object-fit: cover;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

@@ -7,13 +7,13 @@ import axios from "axios";
 const Photo = () => {
   const { id } = useParams();
 
-  const [photos, setPhotos] = useState();
+  const [project, setProject] = useState({});
 
   useEffect(() => {
     const getPhotos = async () => {
       try {
         const res = await axios.get(`http://localhost:8800/api/project/${id}`);
-        setPhotos(res.data);
+        setProject(res.data);
       } catch (err) {
         console.log(err);
       }
@@ -21,11 +21,30 @@ const Photo = () => {
     getPhotos();
   }, [id]);
 
-  console.log(photos);
+  console.log(project);
+
+  const { titulo, desc, year, loca, client, links } = project;
 
   return (
     <div className="photo">
-      <h1>SINGLE PHOTO PAGE</h1>
+      <h1>{titulo}</h1>
+      <div className="container">
+        <div className="data">
+          <h3>WHERE?</h3>
+          <p>{loca}</p>
+          <h3>WHEN?</h3>
+          <p>{year}</p>
+          <h3>FOR WHOM?</h3>
+          <p>{client}</p>
+          <h3>DESCRIPCIÓN:</h3>
+          <p>{desc}</p>
+        </div>
+        <div className="photosContainer">
+          {links?.map((photo) => (
+            <img src={photo} alt="links" key={photo} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
