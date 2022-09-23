@@ -38,8 +38,9 @@ const Admin = () => {
 
   return (
     <div className="admin">
+      <h1>ADMIN PAGE</h1>
       <div className="list">
-        <h2> LISTA DE PROYECTOS: </h2>
+        <h3> LISTA DE PROYECTOS: </h3>
         <div className="container">
           {items
             // .filter((project, i) => project.type === "video")
@@ -57,10 +58,10 @@ const Admin = () => {
               </div>
             ))}
         </div>
+        <Link to="/newProject" className="link">
+          <h2> CREA UN NUEVO PROYECTO </h2>
+        </Link>
       </div>
-      <Link to="/newProject" className="link">
-        <h1> CREA UN NUEVO PROYECTO </h1>
-      </Link>
     </div>
   );
 };

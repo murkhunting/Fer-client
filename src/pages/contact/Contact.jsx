@@ -6,6 +6,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { FiSmartphone } from "react-icons/fi";
 import { FiInstagram } from "react-icons/fi";
 import { HiOutlineChatAlt } from "react-icons/hi";
+import ReactWhatsapp from "react-whatsapp";
 
 const Contact = () => {
   return (
@@ -35,10 +36,10 @@ const Contact = () => {
           <FiInstagram className="iconos" />
           <h5>@fdo_mari</h5>
         </div>
-        <div className="separador">
+        <ReactWhatsapp className="separador" number="+34 690 15 28 46">
           <HiOutlineChatAlt className="iconos" />
           <h5>whatsapp chat</h5>
-        </div>
+        </ReactWhatsapp>
       </div>
     </div>
   );

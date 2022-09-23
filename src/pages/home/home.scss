@@ -31,6 +31,10 @@
       height: 280px;
       top: 200px;
       right: 140px;
+      transition: 0.4s ease-in-out;
+    }
+    img:hover {
+      top: -200px;
     }
   }
 

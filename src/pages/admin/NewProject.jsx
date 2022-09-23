@@ -52,14 +52,11 @@ const NewProject = () => {
 
   return (
     <div className="newproject">
-      <h1>CREA UN NUEVO PROYECTO:</h1>
+      <h1>NUEVO PROYECTO:</h1>
       <form className="container">
         <div className="cover">
           <h2>Es un Video o son Fotos?</h2>
           <select name="type" id="type" onChange={handleChange}>
-            <option hidden selected>
-              elige una opción
-            </option>
             <option value="video">Video</option>
             <option value="photo">Fotos</option>
           </select>
@@ -67,9 +64,6 @@ const NewProject = () => {
         <div className="cover">
           <h2>Es un proyecto de Arquitectura?</h2>
           <select name="architecture" id="type" onChange={handleChange}>
-            <option hidden selected>
-              elige una opción
-            </option>
             <option value="true">Sí</option>
             <option value="false">No</option>
           </select>

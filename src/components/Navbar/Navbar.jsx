@@ -12,6 +12,7 @@ import {
 import { FaVimeo } from "react-icons/fa";
 import logo from "../../assets/images/logoprueba6.png";
 import { HiOutlineChatAlt } from "react-icons/hi";
+import ReactWhatsapp from "react-whatsapp";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -38,9 +39,10 @@ const Navbar = () => {
             {/* <img onClick={showMenu} src={burger} alt="" /> */}
             <h5 onClick={showMenu}>MENU</h5>
           </div>
-          <div className="message">
-            <HiOutlineChatAlt />
-          </div>
+
+          <ReactWhatsapp className="message" number="690152846">
+            <HiOutlineChatAlt />{" "}
+          </ReactWhatsapp>
         </div>
         <div className={menu ? "menu active" : "menu"}>
           <div className="menucontainer">
