@@ -42,15 +42,16 @@
       border: none;
       position: fixed;
       z-index: 500;
-      bottom: 30px;
+      bottom: 50px;
       right: 50px;
-      font-size: 30px;
+      font-size: 38px;
       cursor: pointer;
-      transition: scale 0.2s ease-in-out;
+      transition: 0.3s ease-in-out;
     }
     .message:hover {
       scale: 1.4;
       opacity: 0.8;
+      transform: rotate(15deg);
     }
 
     .right {
