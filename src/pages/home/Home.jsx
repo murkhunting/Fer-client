@@ -26,9 +26,11 @@ const Home = () => {
         <div className="name">
           <h1>FERNANDO</h1>
           <h1>MARÍ</h1>
-          <h5>· DRONE PILOT: VIDEO, PHOTOGRAPHY & ARCHITECTURE ·</h5>
+          <h5 className="fernando">
+            · DRONE PILOT: VIDEO, PHOTOGRAPHY & ARCHITECTURE ·
+          </h5>
+          <img className="dronaso" src={drone} alt="" />
         </div>
-        <img src={drone} alt="" />
       </div>
       <div className="container">
         {items.map((project) => (

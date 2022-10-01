@@ -21,7 +21,7 @@
       margin-top: 8px;
 
       img {
-        width: 70px;
+        width: 80px;
         margin: 120px 0 0 120px;
         transition: transform 0.4s ease-in-out;
         padding: 5px;
@@ -35,7 +35,7 @@
     }
 
     .message {
-      padding: 10px 10px 0 10px;
+      padding: 12px 12px 2px 12px;
       color: rgba(40, 40, 40, 0.814);
       background-color: rgba(247, 247, 247, 0.664);
       border-radius: 50%;
@@ -44,7 +44,7 @@
       z-index: 500;
       bottom: 50px;
       right: 50px;
-      font-size: 38px;
+      font-size: 35px;
       cursor: pointer;
       transition: 0.3s ease-in-out;
     }

@@ -19,22 +19,22 @@
         font-weight: 800;
         margin-bottom: -10px;
       }
-      h5 {
+      .fernando {
         font-size: 18px;
         font-weight: 800;
         margin: 20px 0 150px 0;
       }
-    }
-    img {
-      position: absolute;
-      width: 350px;
-      height: 280px;
-      top: 200px;
-      right: 140px;
-      transition: 0.4s ease-in-out;
-    }
-    img:hover {
-      top: -200px;
+      .dronaso {
+        position: absolute;
+        width: 250px;
+        top: 200px;
+        right: 350px;
+        transition: 0.2s ease-in-out;
+      }
+      .fernando:hover ~ .dronaso {
+        top: -300px;
+        right: 500px;
+      }
     }
   }
 
