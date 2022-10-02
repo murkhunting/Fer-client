@@ -10,7 +10,8 @@
 
   .head {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    height: 100vh;
     .name {
       margin: 70px 0 0 0;
       z-index: 200;
@@ -21,47 +22,39 @@
         margin-bottom: -10px;
       }
     }
-    img {
-      position: absolute;
-      width: 350px;
-      top: 260px;
-      right: 12vw;
-      transform: scaleX(-1);
-    }
-  }
-  .personal {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    text-align: left;
-    background-color: rgb(167, 167, 167);
-    color: rgb(247, 247, 247);
-    margin: 100px 30vw 20px 18vw;
-    padding: 50px;
-    box-shadow: 5px 10px 10px rgba(61, 61, 61, 0.541);
-    h5 {
-      font-size: 24px;
-      font-weight: 800;
-      margin: 0 0 20px 0;
-    }
-    p {
-      font-size: 16;
+    .personal {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: justify;
+      margin: 100px 18vw 20px 18vw;
+
+      // box-shadow: 5px 10px 10px rgba(61, 61, 61, 0.541);
+      h5 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-right: 50px;
+        line-height: 184%;
+      }
+      span {
+        font-size: 22px;
+        font-weight: 800;
+      }
+      img {
+        width: 350px;
+      }
     }
   }
 
   .drone1 {
     display: flex;
     flex-direction: row;
-    background-color: rgb(167, 167, 167);
-    color: rgb(247, 247, 247);
-    margin: 40px 18vw 20px 18vw;
-    padding: 50px;
-    box-shadow: 5px 10px 10px rgba(61, 61, 61, 0.541);
+    margin: 100px 18vw 20px 18vw;
+    // box-shadow: 5px 10px 10px rgba(61, 61, 61, 0.541);
 
     img {
-      height: 200px;
+      height: 500px;
       background-color: rgb(247, 247, 247);
-      margin: 0 50px;
     }
 
     .droneinfo {
@@ -70,15 +63,20 @@
       align-items: left;
       justify-content: center;
       text-align: left;
-      color: rgb(247, 247, 247);
+
       margin: 0 50px;
       h5 {
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 800;
         margin: 0 0 20px 0;
       }
-      p {
-        font-size: 14;
+      h6 {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      span {
+        font-size: 22px;
+        font-weight: 700;
       }
     }
   }

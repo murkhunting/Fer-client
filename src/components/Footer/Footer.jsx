@@ -33,12 +33,6 @@ const Footer = () => {
         </Link>
       </div>
       <div className="social">
-        <h5 className="">
-          <AiFillLinkedin />
-        </h5>
-        <h5>
-          <AiFillFacebook />
-        </h5>
         <h5>
           <AiFillInstagram />
         </h5>

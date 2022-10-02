@@ -16,6 +16,8 @@ import Photo from "./pages/photo/Photo.jsx";
 import PhotoList from "./pages/photoList/PhotoList.jsx";
 import Video from "./pages/video/Video.jsx";
 import VideoList from "./pages/videoList/VideoList.jsx";
+import Faqs from "./pages/faqs/Faqs.jsx";
+
 
 import Admin from "./pages/admin/Admin.jsx";
 import Login from "./pages/admin/Login.jsx";
@@ -44,6 +46,7 @@ function App() {
             <Route path="/videos" element={<VideoList />} />
             <Route path="/videos/:id" element={<Video />} />
             <Route path="/architect" element={<Architect />} />
+            <Route path="/faqs" element={<Faqs />} />
             <Route
               path="/login"
               element={user ? <Navigate to="/admin" /> : <Login />}

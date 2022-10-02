@@ -10,7 +10,7 @@ const VideoList = () => {
 
   const scrollRef = useRef(null);
 
-  useScrollSnap({ ref: scrollRef, duration: 100, delay: 0 });
+  useScrollSnap({ ref: scrollRef, duration: -100, delay: -10 });
 
   useEffect(() => {
     const getAllVideos = async () => {

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Item from "../../components/Item/Item";
 // import useScrollSnap from "react-use-scroll-snap";
-import drone from "../../assets/images/drone.png";
+// import drone from "../../assets/images/drone.png";
 
 const Home = () => {
   const [items, setItems] = useState([]);
@@ -29,7 +29,7 @@ const Home = () => {
           <h5 className="fernando">
             · DRONE PILOT: VIDEO, PHOTOGRAPHY & ARCHITECTURE ·
           </h5>
-          <img className="dronaso" src={drone} alt="" />
+          {/* <img className="dronaso" src={drone} alt="" /> */}
         </div>
       </div>
       <div className="container">

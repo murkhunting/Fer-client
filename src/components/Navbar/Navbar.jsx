@@ -46,9 +46,9 @@ const Navbar = () => {
         </div>
         <div className={menu ? "menu active" : "menu"}>
           <div className="menucontainer">
-            <Link to="/" className="link">
+            {/* <Link to="/" className="link">
               <h1 onClick={showMenu}>HOME</h1>
-            </Link>
+            </Link> */}
             <Link to="/videos" className="link">
               <h1 onClick={showMenu}>VIDEOS</h1>
             </Link>
@@ -67,13 +67,10 @@ const Navbar = () => {
             <Link to="/contact" className="link">
               <h1 onClick={showMenu}>CONTACT</h1>
             </Link>
+            <Link to="/faqs" className="link">
+              <h1 onClick={showMenu}>FAQS</h1>
+            </Link>
             <div className="social">
-              <h5 className="">
-                <AiFillLinkedin />
-              </h5>
-              <h5>
-                <AiFillFacebook />
-              </h5>
               <h5>
                 <AiFillInstagram />
               </h5>
