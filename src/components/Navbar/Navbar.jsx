@@ -3,12 +3,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./navbar.scss";
 import { IoCloseSharp } from "react-icons/io5";
-import {
-  AiFillLinkedin,
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillYoutube,
-} from "react-icons/ai";
+import { AiFillInstagram, AiFillYoutube } from "react-icons/ai";
 import { FaVimeo } from "react-icons/fa";
 import logo from "../../assets/images/logoprueba6.png";
 import { ImWhatsapp } from "react-icons/im";

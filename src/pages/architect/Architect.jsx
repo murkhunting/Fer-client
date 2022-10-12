@@ -28,7 +28,21 @@ const Architect = () => {
     <div className="architect">
       <div className="text">
         <h1>ARCHITECTURE</h1>
-        <h5>· ARCHITECTURE RELATED VIDEO & PHOTO EXAMPLES ·</h5>
+        <div className="explain">
+          <h5>
+            Soy arquitecto desde 2017 y estoy especializado en fotografía de
+            arquitectura e interiorismo.
+          </h5>
+          <h5>
+            Completo el contenido del proyecto con fotografías aéreas interiores
+            y exteriores, dando como resultado final un proyecto fotográfico
+            completo del edificio.
+          </h5>
+          <h5>
+            Además de mis drones, cuento con equipo fotográfico propio para
+            poder hacer un reportaje completo de un edificio.
+          </h5>
+        </div>
       </div>
       <div className="container" ref={scrollRef}>
         {projects

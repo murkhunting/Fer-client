@@ -1,12 +1,7 @@
 import React from "react";
 import "./footer.scss";
 import { Link } from "react-router-dom";
-import {
-  AiFillLinkedin,
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillYoutube,
-} from "react-icons/ai";
+import { AiFillInstagram, AiFillYoutube } from "react-icons/ai";
 import { FaVimeo } from "react-icons/fa";
 
 const Footer = () => {

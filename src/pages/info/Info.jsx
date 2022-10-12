@@ -2,6 +2,7 @@ import React from "react";
 import "./info.scss";
 import fer from "../../assets/images/fer.png";
 import drone1 from "../../assets/images/mavicair2.png";
+import { Link } from "react-router-dom";
 
 const Info = () => {
   return (
@@ -12,17 +13,27 @@ const Info = () => {
           <h1>& TOOLS</h1>
         </div>
         <div className="personal">
-          <h5>
-            Mi nombre es <span>Fernando Marí</span> y soy piloto de drones.
-            Trabajo en la industria audiovisual aérea desde 2019. Dispongo de la
-            documentación y los certificados necesarios, así como el equipo,
-            para poder volar en espacio controlado, en los que se encuentran la
-            mayoría de los centros de las ciudades. Para poder dar respuesta a
-            los diferentes tipos de proyectos audiovisuales cuento con un equipo
-            compuesto por diferentes drones y accesorios, según la
-            características del vuelo.
-          </h5>
           <img src={fer} alt="" />
+          <div className="texto">
+            <h5>
+              Mi nombre es <span>Fernando Marí</span> y soy piloto de drones.
+              Trabajo en la industria audiovisual aérea desde 2019. Dispongo de
+              la documentación y los certificados necesarios, así como el
+              equipo, para poder volar en espacio controlado, en los que se
+              encuentran la mayoría de los centros de las ciudades. Para poder
+              dar respuesta a los diferentes tipos de proyectos audiovisuales
+              cuento con un equipo compuesto por diferentes drones y accesorios,
+              según la características del vuelo.
+            </h5>
+            <h6>Arquitecto - ETSALS - 2017</h6>
+            <h6>
+              Certificado de piloto y operador registrado de drones - 2018
+            </h6>
+            <h6>Radiofonista profesional para pilotos remotos - 2021</h6>
+            <h6>
+              Curso fotografía de Arquitectura e Interiorismo - IEFC - 2022
+            </h6>
+          </div>
         </div>
       </div>
       <div className="drone1">
@@ -53,6 +64,17 @@ const Info = () => {
           </p>
         </div>
         <img src={drone1} alt="" />
+      </div>
+      <div className="frase">
+        <h6>
+          Las características del proyecto determinan el tipo de dron a
+          utilizar.
+        </h6>
+        <Link to="/contact" className="link">
+          <h5>
+            Cuéntame tu idea para decidir cuál se ajusta más a tus necesidades.
+          </h5>
+        </Link>
       </div>
     </div>
   );

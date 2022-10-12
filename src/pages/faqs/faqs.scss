@@ -3,182 +3,89 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+
   color: rgb(75, 75, 75);
   background-color: rgb(247, 247, 247);
+  width: 100vw;
   // background-image: url("../../assets/images/fondo.jpg");
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    .name {
-      margin: 30px 0 0 0;
-      z-index: 200;
-
-      h1 {
-        font-size: 60px;
-        font-weight: 600;
-        margin-bottom: -10px;
-      }
-    }
+  .name {
+    text-align: center;
+    margin: 40px 0 0 0;
+    z-index: 200;
 
     h1 {
-      font-size: 75px;
-      font-weight: 800;
+      font-size: 60px;
+      font-weight: 600;
+      margin-bottom: -10px;
     }
+  }
 
-    .qya {
+  h1 {
+    font-size: 75px;
+    font-weight: 800;
+  }
+
+  .qya {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    margin: 60px 0;
+
+    .separador {
       display: flex;
       flex-direction: column;
       align-items: left;
       justify-content: center;
-      margin: 60px 0;
+      border: none;
+      color: rgb(75, 75, 75);
+      background-color: rgb(247, 247, 247);
+      transition: transform 0.5s;
+      cursor: pointer;
+      transition: scale 0.2s ease-in-out;
 
-      .separador {
+      .pregunta {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        position: relative;
+        flex-direction: row;
+        align-items: left;
+        justify-content: left;
+        margin: 0 0 30px 24vw;
+        .iconos {
+          font-size: 20px;
+          transition: transform 0.3s;
+          margin: 0 20px 0 0;
+        }
+        h5 {
+          font-size: 20px;
+          font-weight: 800;
+        }
+      }
+      .respuesta {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
         justify-content: center;
-        border: none;
-        color: rgb(75, 75, 75);
-        background-color: rgb(247, 247, 247);
-        transition: transform 0.5s;
-        cursor: pointer;
-        transition: scale 0.2s ease-in-out;
+        margin: 0 18vw 30px 24vw;
 
-        .pregunta {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          margin: 0 0 30px 20vw;
-          .iconos {
-            font-size: 20px;
-            transition: transform 0.3s;
-            margin: 0 20px 0 0;
-          }
-          h5 {
-            font-size: 20px;
-            font-weight: 800;
-          }
+        h6 {
+          line-height: 200%;
+          font-size: 15px;
+          margin-right: 30px;
         }
-        .respuesta {
-          display: flex;
-          flex-direction: row;
-          text-align: justify;
-
-          h6 {
-            line-height: 200%;
-            font-size: 15px;
-            margin-right: 30px;
-          }
-          img {
-            width: 350px;
-          }
-        }
-      }
-      .separador:hover .iconos {
-        transform: rotate(20deg);
-      }
-      .separador:hover {
-        scale: 1;
-      }
-    }
-  }
-}
-
-@media (max-width: 1439px) {
-  .contact {
-    .container {
-      .left {
-        font-size: 60px;
-      }
-    }
-  }
-}
-
-@media (max-width: 1159px) {
-  .contact {
-    .container {
-      .left {
-        font-size: 55px;
-      }
-    }
-  }
-}
-
-@media (max-width: 1100px) {
-  .contact {
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .left {
-        text-align: center;
-
-        span {
-          margin: 34px 100px 0 100px;
-        }
-        .arrow {
-          transform: rotate(90deg);
-        }
-      }
-
-      .right {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: top;
-        margin-right: 0px;
-
-        .drone {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-around;
-
-          .locations {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-
-            margin-right: 0px;
-
-            span {
-              margin: 20px;
-            }
-          }
+        img {
+          width: 350px;
+          height: min-content;
         }
       }
     }
-  }
-}
-
-@media (max-width: 520px) {
-  .contact {
-    .container {
-      .left {
-        width: 500px;
-        font-size: 40px;
-      }
-      .right {
-        .drone {
-          .locations {
-            span {
-              font-size: 60px;
-              margin: 10px;
-            }
-          }
-        }
-        .info {
-          height: auto;
-          width: auto;
-          flex-direction: column;
-          padding: 20px 25px 0 25px;
-        }
-      }
+    .separador:hover .iconos {
+      transform: rotate(20deg);
+    }
+    .separador:hover {
+      scale: 1;
     }
   }
 }
